@@ -1,4 +1,4 @@
-set compatible "Vim の Vi 互換機能を無効にする（らしい）
+set nocompatible "Vim の Vi 互換機能を無効にする（らしい）
 
 set whichwrap=b,s,h,l,<,>,[,] "左右のカーソル移動で行を移動する
 
