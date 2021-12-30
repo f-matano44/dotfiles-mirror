@@ -1,8 +1,12 @@
 # vim_setting
 自分用に作った vim 設定ファイルです．<br>
-GNUGPL version 3 の下でご自由にお使いください．<br><br>
+GNU GPL version 3 の下でご自由にお使いください．<br>
+$ bash ./install.sh<br>
+を実行するとインストールできます．<br><br>
 
 This is vim setting files for me.<br>
-You can use this repo on GNUGPL version 3.<br><br>
+This repo is available on GNU GPL version 3.<br>
+You can install with below command.<br>
+$ bash ./install.sh<br><br>
 
 <br>© 2021 Fumiyoshi MATANO
