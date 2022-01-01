@@ -11,9 +11,7 @@ You can install with below command.<br>
 $ bash ./install.sh<br>
 <br>
 
-インストール後のディレクトリ構成<br>
-Directory after installation<br>
-<br>
+# インストール後のディレクトリ構成（Directory after installation）
 ~(home directory)<br>
 ├─.vim<br>
 │　├colors<br>
