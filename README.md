@@ -13,6 +13,7 @@ $ bash ./install.sh<br>
 
 インストール後のディレクトリ構成<br>
 Directory after installation<br>
+<br>
 ~(home directory)<br>
 ├─.vim<br>
 │　├colors<br>
