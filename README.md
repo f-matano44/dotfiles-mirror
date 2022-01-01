@@ -17,7 +17,7 @@ Directory after installation<br>
 ├─.vim<br>
 │　├colors<br>
 │　│└lucario.vim<br>
-│　└.vimrc<br>
+│　└vimrc<br>
 └─.vimrc (Symbolic link of ~/.vim/.vimrc)<br>
 <br>
 © 2021 Fumiyoshi MATANO
