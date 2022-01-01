@@ -32,11 +32,9 @@ if [ ! -d ~/.cache ]; then
 fi
 
 # create .vim directory
-mkdir ~/.vim
-mkdir ~/.vim/colors
+cp -r ./vim ~/.vim
 
 # create symbolic link
-cp ./data/vimrc ~/.vim/.vimrc
 ln -s ~/.vim/.vimrc ~/.vimrc
 
 # download lucario
@@ -45,12 +43,13 @@ if [ ! -d ~/.cache/lucario ]; then
     git clone https://github.com/raphamorim/lucario.git
 else
     cd ~/.cache/lucario
-    git config pull.rebase false
+    git pull --rebase
 fi
 cp ~/.cache/lucario/colors/lucario.vim ~/.vim/colors/
 
 
 #--------------------------
+echo ''
 echo 'Installation is complete!'
 echo 'You must set color profile for terminal to lucario.'
-echo ''
+echo '' 
