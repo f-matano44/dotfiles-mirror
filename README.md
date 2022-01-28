@@ -8,5 +8,5 @@ GNU GPL version 3 の下でご自由にお使いください．<br><br>
 <br>
 
 # お借りしているファイルについて
-Lucario (./vim/colors/lucario.vim)<br>
+[Lucario](https://github.com/raphamorim/lucario) ([./vim/colors/lucario.vim](https://github.com/f-matano44/dotfiles/blob/main/vim/colors/lucario.vim))<br>
 **License**: MIT © [Raphael Amorim](https://github.com/raphamorim).
