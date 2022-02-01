@@ -7,7 +7,7 @@ function addLineBeforeUsername()
 {
     if [ -z "$ADD_LINE_BEFORE_USERNAME" ]; then
         ADD_LINE_BEFORE_USERNAME=1
-    elif [ "$ADD_LINE_BEFORE_USERNAME" -eq 1 ]; then
+    else
         echo ""
     fi
 }
@@ -28,10 +28,16 @@ alias python3='/usr/local/opt/python@3.7/bin/python3'
 alias pip='/usr/local/opt/python@3.7/bin/pip3'
 alias pip3='/usr/local/opt/python@3.7/bin/pip3'
 
-# パス
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+# PATH
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+# openjdk@11
+# export PATH="/usr/local/opt/openjdk@11/bin:$PATH" # PATH
+# export CPPFLAGS="-I/usr/local/opt/openjdk@11/include" # CPPFLAGS
+
+# jdk-17.0.2.jdk
+export PATH="$HOME/Applications/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"
 
 # なにかと便利になる設定
 setopt auto_cd # cd コマンドを省略
