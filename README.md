@@ -4,7 +4,7 @@ GNU GPL version 3 の下でご自由にお使いください．<br><br>
 設定方法<br>
 \$ cd ./dotfiles/<br>
 \$ sh ./setup.sh<br><br>
-**© 2021 Fumiyoshi MATANO**<br>
+**© 2021-2022 Fumiyoshi MATANO**<br>
 <br>
 
 # お借りしているファイルについて
