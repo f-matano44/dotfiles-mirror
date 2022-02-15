@@ -1,6 +1,6 @@
 # これはなに
 自分用に作った設定ファイルです．<br>
-GNU GPL version 3 の下でご自由にお使いください．<br><br>
+MIT Licence の下でご自由にお使いください．<br><br>
 設定方法<br>
 \$ cd ./dotfiles/<br>
 \$ sh ./setup.sh<br><br>
