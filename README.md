@@ -5,7 +5,7 @@ You can use under MIT License.<br>
 # usage
 \$ cd ./dotfiles/ && sh ./setup.sh<br>
 <br>
-**© 2021-2022 Fumiyoshi MATANO**<br>
+**© 2021 Fumiyoshi MATANO**<br>
 
 # Included file(s)
 [Lucario](https://github.com/raphamorim/lucario) (dotfiles/vim/colors/lucario.vim)<br>
