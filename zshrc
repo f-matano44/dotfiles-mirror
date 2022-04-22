@@ -23,14 +23,19 @@ ${arrow_color}>>${color_reset} "`
 alias la='ls -a'
 alias javacu='javac -J-Dfile.encoding=UTF-8'
 alias javau='java -Dfile.encoding=UTF-8'
-alias python='/usr/local/opt/python@3.7/bin/python3'
-alias python3='/usr/local/opt/python@3.7/bin/python3'
-alias pip='/usr/local/opt/python@3.7/bin/pip3'
-alias pip3='/usr/local/opt/python@3.7/bin/pip3'
+alias python="python3"
+alias pip="pip3"
+# alias python='/usr/local/opt/python@3.7/bin/python3'
+# alias python3='/usr/local/opt/python@3.7/bin/python3'
+# alias pip='/usr/local/opt/python@3.7/bin/pip3'
+# alias pip3='/usr/local/opt/python@3.7/bin/pip3'
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+
+# nodejs
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # openjdk@11
 # export PATH="/usr/local/opt/openjdk@11/bin:$PATH" # PATH
