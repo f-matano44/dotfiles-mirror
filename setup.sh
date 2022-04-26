@@ -6,3 +6,4 @@ CURRENT=`pwd`
 ln -s $CURRENT/vim ~/.vim
 ln -s $CURRENT/vimrc ~/.vimrc
 ln -s $CURRENT/zshrc ~/.zshrc
+ln -s $CURRENT/zprofile ~/.zprofile

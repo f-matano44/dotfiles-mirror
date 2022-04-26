@@ -30,6 +30,10 @@ alias pip="pip3"
 # alias pip='/usr/local/opt/python@3.7/bin/pip3'
 # alias pip3='/usr/local/opt/python@3.7/bin/pip3'
 
+# pipenv
+alias tts="cd ~/tts_with_Python && pipenv shell"
+alias MLPR="cd ~/Documents/MLPR && pipenv shell"
+
 # PATH
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
