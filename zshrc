@@ -39,7 +39,7 @@ alias pip="pip3"
 #alias pip3='/usr/local/opt/python@3.7/bin/pip3'
 # pipenv
 alias tts="cd ~/tts_with_Python && pipenv shell"
-alias MLPR="cd ~/Documents/MLPR && pipenv shell"
+alias datascience="cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell"
 
 # nodejs
 export PATH=$HOME/.nodebrew/current/bin:$PATH
