@@ -21,6 +21,8 @@ ${arrow_color}>>${color_reset} "`
 
 # aliases
 alias la='ls -a'
+alias halt='shutdown'
+alias reboot='shutdown -r'
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
