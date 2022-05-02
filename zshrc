@@ -35,7 +35,7 @@ export CLICOLOR=1 # add color in "ls"
 # Python
 alias python='python3'
 alias pip='pip3'
-export PATH="/Users/fumi/Library/Python/3.8/bin:$PATH"
+export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 #alias python='/usr/local/opt/python@3.7/bin/python3'
 #alias python3='/usr/local/opt/python@3.7/bin/python3'
 #alias pip='/usr/local/opt/python@3.7/bin/pip3'
