@@ -21,8 +21,8 @@ ${arrow_color}>>${color_reset} "`
 
 # aliases
 alias la='ls -a'
-alias halt='shutdown'
-alias reboot='shutdown -r'
+alias halt='shutdown now'
+alias reboot='shutdown -r now'
 
 # PATH
 export PATH="/usr/local/bin:$PATH"
@@ -33,18 +33,19 @@ setopt auto_cd # omit "cd"
 export CLICOLOR=1 # add color in "ls"
 
 # Python
-alias python="python3"
-alias pip="pip3"
+alias python='python3'
+alias pip='pip3'
+export PATH="/Users/fumi/Library/Python/3.8/bin:$PATH"
 #alias python='/usr/local/opt/python@3.7/bin/python3'
 #alias python3='/usr/local/opt/python@3.7/bin/python3'
 #alias pip='/usr/local/opt/python@3.7/bin/pip3'
 #alias pip3='/usr/local/opt/python@3.7/bin/pip3'
 # pipenv
-alias tts="cd ~/tts_with_Python && pipenv shell"
-alias datascience="cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell"
+alias tts='cd ~/tts_with_Python && pipenv shell'
+alias datascience='cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell'
 
 # nodejs
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+#export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # java
 alias javacu='javac -J-Dfile.encoding=UTF-8'
@@ -53,6 +54,6 @@ alias javau='java -Dfile.encoding=UTF-8'
 #export PATH="/usr/local/opt/openjdk@11/bin:$PATH" # PATH
 #export CPPFLAGS="-I/usr/local/opt/openjdk@11/include" # CPPFLAGS
 # jdk-17.0.2.jdk
-export PATH="$HOME/Applications/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"
+#export PATH="$HOME/Applications/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"
 
 
