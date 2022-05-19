@@ -21,7 +21,7 @@ ${arrow_color}>>${color_reset} "`
 
 # aliases
 alias la='ls -a'
-alias halt='shutdown now'
+alias halt='shutdown -h now'
 alias reboot='shutdown -r now'
 alias えぃｔ='exit'
 
@@ -41,8 +41,9 @@ export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 #alias python3='/usr/local/opt/python@3.7/bin/python3'
 #alias pip='/usr/local/opt/python@3.7/bin/pip3'
 #alias pip3='/usr/local/opt/python@3.7/bin/pip3'
+
 # pipenv
-alias tts='cd ~/tts_with_Python && pipenv shell'
+alias tts='cd ~/ttslearn/notebooks && pipenv shell'
 alias datascience='cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell'
 
 # nodejs
