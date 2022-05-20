@@ -43,10 +43,4 @@ alias datascience='cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell
 # java
 alias javacu='javac -J-Dfile.encoding=UTF-8'
 alias javau='java -Dfile.encoding=UTF-8'
-# openjdk@11
-#export PATH="/usr/local/opt/openjdk@11/bin:$PATH" # PATH
-#export CPPFLAGS="-I/usr/local/opt/openjdk@11/include" # CPPFLAGS
-# jdk-17.0.2.jdk
-#export PATH="$HOME/Applications/jdk-17.0.2.jdk/Contents/Home/bin:$PATH"
-
 
