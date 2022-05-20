@@ -25,18 +25,12 @@ alias halt='shutdown -h now'
 alias reboot='shutdown -r now'
 alias えぃｔ='exit'
 
-# PATH
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
 # other setting 
 setopt auto_cd # omit "cd"
-export CLICOLOR=1 # add color in "ls"
 
 # Python
 alias python='python3'
 alias pip='pip3'
-export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 #alias python='/usr/local/opt/python@3.7/bin/python3'
 #alias python3='/usr/local/opt/python@3.7/bin/python3'
 #alias pip='/usr/local/opt/python@3.7/bin/pip3'
@@ -45,9 +39,6 @@ export PATH="$HOME/Library/Python/3.8/bin:$PATH"
 # pipenv
 alias tts='cd ~/ttslearn/notebooks && pipenv shell'
 alias datascience='cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell'
-
-# nodejs
-#export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # java
 alias javacu='javac -J-Dfile.encoding=UTF-8'
