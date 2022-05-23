@@ -6,12 +6,12 @@ export PYENV_ROOT="$HOME/.pyenv/shims"
 export PATH="$PYENV_ROOT:$PATH"
 export PIPENV_PYTHON="$PYENV_ROOT/python"
 
-# brew
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
+# brew (intel)
+#export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/sbin:$PATH"
 
 # brew (m1)
-#eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # pipenv
 export PATH="$HOME/Library/Python/3.8/bin:$PATH"
