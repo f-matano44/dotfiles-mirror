@@ -1,0 +1,5 @@
+[user]
+	name = Fumiyoshi MATANO
+	email = f.matano44@e.email
+[core]
+	excludesfile = /Users/fumi/.gitignore_global
