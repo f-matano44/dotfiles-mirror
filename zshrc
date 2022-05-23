@@ -31,13 +31,8 @@ setopt auto_cd # omit "cd"
 # Python
 alias python='python3'
 alias pip='pip3'
-#alias python='/usr/local/opt/python@3.7/bin/python3'
-#alias python3='/usr/local/opt/python@3.7/bin/python3'
-#alias pip='/usr/local/opt/python@3.7/bin/pip3'
-#alias pip3='/usr/local/opt/python@3.7/bin/pip3'
 
 # pipenv
-alias tts='cd ~/ttslearn/notebooks && pipenv shell'
 alias datascience='cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell'
 
 # java
