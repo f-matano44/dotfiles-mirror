@@ -38,4 +38,3 @@ alias datascience='cd ~/Documents/Advanced_Data_Science_Exercise && pipenv shell
 # java
 alias javacu='javac -J-Dfile.encoding=UTF-8'
 alias javau='java -Dfile.encoding=UTF-8'
-
