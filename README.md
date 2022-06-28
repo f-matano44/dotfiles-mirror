@@ -2,11 +2,11 @@
 This is my dotfiles.<br>
 You can use under MIT License.<br>
 
-# usage
+# How to setup
+\$ git clone https://github.com/f-matano44/dotfiles.git<br> 
 \$ cd ./dotfiles/ && sh ./setup.sh<br>
 <br>
-**© 2021 Fumiyoshi MATANO**<br>
 
 # Included file(s)
-[Lucario](https://github.com/raphamorim/lucario) (dotfiles/vim/colors/lucario.vim)<br>
+[Lucario](https://github.com/raphamorim/lucario) (dotfiles/vim/lucario.vim)<br>
 **License**: MIT © [Raphael Amorim](https://github.com/raphamorim).

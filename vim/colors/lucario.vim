@@ -1,1 +1,0 @@
-/Users/fumi/dotfiles/lucario/colors/lucario.vim
