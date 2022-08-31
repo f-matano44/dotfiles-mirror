@@ -10,5 +10,3 @@ You can use under MIT License.<br>
 # Included file(s)
 [Lucario](https://github.com/raphamorim/lucario) (dotfiles/vim/lucario.vim)<br>
 **Licence**: MIT © [Raphael Amorim](https://github.com/raphamorim).<br>
-[tender.vim](https://github.com/jacoborus/tender.vim) (dotfiles/vim/tender.vim)<br>
-**Licence**: MIT (c) 2020 Jacobo Tabernero
