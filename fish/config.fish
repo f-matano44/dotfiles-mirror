@@ -28,3 +28,5 @@ alias javacu='javac -J-Dfile.encoding=UTF-8'
 alias javau='java -Dfile.encoding=UTF-8'
 alias targz='tar -zcvf' # targz filename.tar.gz dirname
 alias untargz='tar -zxvf' # untargz filename.tar.gz
+
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
