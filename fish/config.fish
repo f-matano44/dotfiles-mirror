@@ -16,6 +16,7 @@ set PATH ~/Library/Python/3.8/bin $PATH # pipenv
 set PYENV_ROOT ~/.pyenv/shims # pyenv
 set PATH $PYENV_ROOT $PATH  # pyenv
 set PIPENV_PYTHON $PYENV_ROOT/python # pyenv
+set PATH /Users/fumi/Library/node-v14.17.5-darwin-x64/bin $PATH # nodejs@14
 
 # alias
 alias la='ls -a'
