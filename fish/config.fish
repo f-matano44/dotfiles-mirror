@@ -8,15 +8,15 @@ set fish_greeting
 # set OSname
 set OSname (uname -s)
 
-# brew (m1)
+# homebrew
+## Intel
+eval (/usr/local/bin/brew shellenv)
+## AppleSilicon
 eval (/opt/homebrew/bin/brew shellenv)
 
 # PATH
 set PATH ~/Library/Python/3.8/bin $PATH # pipenv
-set PYENV_ROOT ~/.pyenv/shims # pyenv
-set PATH $PYENV_ROOT $PATH  # pyenv
-set PIPENV_PYTHON $PYENV_ROOT/python # pyenv
-set PATH /Users/fumi/Library/node-v14.17.5-darwin-x64/bin $PATH # nodejs@14
+set PATH ~/Library/node-v14.17.5-darwin-x64/bin $PATH # nodejs@14
 
 # alias
 alias la='ls -a'
@@ -29,5 +29,6 @@ alias javacu='javac -J-Dfile.encoding=UTF-8'
 alias javau='java -Dfile.encoding=UTF-8'
 alias targz='tar -zcvf' # targz filename.tar.gz dirname
 alias untargz='tar -zxvf' # untargz filename.tar.gz
+alias 86brew='arch -x86_64 /usr/local/bin/brew' # x86_64 brew
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
