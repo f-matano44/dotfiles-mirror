@@ -9,8 +9,10 @@ set fish_greeting
 set OSname (uname -s)
 
 # homebrew
+# ref: https://blog.mksc.jp/contents/apple-silicon/
 ## Intel
 eval (/usr/local/bin/brew shellenv)
+alias 86brew='arch -x86_64 /usr/local/bin/brew'
 ## AppleSilicon
 eval (/opt/homebrew/bin/brew shellenv)
 
@@ -29,6 +31,5 @@ alias javacu='javac -J-Dfile.encoding=UTF-8'
 alias javau='java -Dfile.encoding=UTF-8'
 alias targz='tar -zcvf' # targz filename.tar.gz dirname
 alias untargz='tar -zxvf' # untargz filename.tar.gz
-alias 86brew='arch -x86_64 /usr/local/bin/brew' # x86_64 brew
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
