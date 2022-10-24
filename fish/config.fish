@@ -5,9 +5,6 @@ end
 # remove intro message
 set fish_greeting
 
-# set OSname
-set OSname (uname -s)
-
 # homebrew
 # ref: https://blog.mksc.jp/contents/apple-silicon/
 ## Intel
