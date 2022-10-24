@@ -15,7 +15,6 @@ eval (/opt/homebrew/bin/brew shellenv)
 
 # PATH
 set PATH ~/Library/Python/3.8/bin $PATH # pipenv
-set PATH ~/Library/node-v14.17.5-darwin-x64/bin $PATH # nodejs@14
 
 # alias
 alias la='ls -a'
