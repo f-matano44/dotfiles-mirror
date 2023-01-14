@@ -27,8 +27,8 @@ alias 86pip 'arch -x86_64 /usr/local/bin/python3.8 -m pip'
 # Java
 fish_add_path /opt/homebrew/opt/openjdk@11/bin
 set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@11/include"
-alias javacu 'javac -J-Dfile.encoding=UTF-8'
-alias javau 'java -Dfile.encoding=UTF-8'
+# alias javacu 'javac -J-Dfile.encoding=UTF-8'
+# alias javau 'java -Dfile.encoding=UTF-8'
 
 # asdf
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
