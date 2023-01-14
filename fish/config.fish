@@ -8,21 +8,19 @@ end
 ## Intel
 eval (/usr/local/bin/brew shellenv)
 alias 86brew 'arch -x86_64 /usr/local/bin/brew'
-## AppleSilicon
+## Apple Silicon
 eval (/opt/homebrew/bin/brew shellenv)
 
 # Python
 alias python 'python3'
 alias pip 'pip3'
-set PATH ~/Library/Python/3.8/bin $PATH # pipenv
 
 # Python x86_64
-## Python has been installed as
-##   /usr/local/bin/python3.8
-##
-## Unversioned and major-versioned symlinks `python`, `python3`, `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
-## `python3.8`, `python3.8-config`, `pip3.8`, etc., respectively, have been installed into
-##   /usr/local/opt/python@3.8/libexec/bin
+## Python has been installed as /usr/local/bin/python3.8
+## Unversioned and major-versioned symlinks `python`, `python3`,
+## `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
+## `python3.8`, `python3.8-config`, `pip3.8`, etc.,
+## respectively, have been installed into /usr/local/opt/python@3.8/libexec/bin
 alias 86python 'arch -x86_64 /usr/local/bin/python3.8'
 alias 86pip 'arch -x86_64 /usr/local/bin/python3.8 -m pip'
 
