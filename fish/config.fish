@@ -25,8 +25,8 @@ alias 86python 'arch -x86_64 /usr/local/bin/python3.8'
 alias 86pip 'arch -x86_64 /usr/local/bin/python3.8 -m pip'
 
 # Java
-fish_add_path /opt/homebrew/opt/openjdk@11/bin
-set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@11/include"
+fish_add_path /opt/homebrew/opt/openjdk@17/bin
+set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 # alias javacu 'javac -J-Dfile.encoding=UTF-8'
 # alias javau 'java -Dfile.encoding=UTF-8'
 
