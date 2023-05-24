@@ -11,21 +11,15 @@ alias 86brew 'arch -x86_64 /usr/local/bin/brew'
 ## Apple Silicon
 eval (/opt/homebrew/bin/brew shellenv)
 
-# Python
-alias python 'python3'
-alias pip 'pip3'
-
-# Python x86_64
-## Python has been installed as /usr/local/bin/python3.8
-## Unversioned and major-versioned symlinks `python`, `python3`,
-## `python-config`, `python3-config`, `pip`, `pip3`, etc. pointing to
-## `python3.8`, `python3.8-config`, `pip3.8`, etc.,
-## respectively, have been installed into /usr/local/opt/python@3.8/libexec/bin
-alias 86python 'arch -x86_64 /usr/local/bin/python3.8'
-alias 86pip 'arch -x86_64 /usr/local/bin/python3.8 -m pip'
+# Python (miniconda3)
+fish_add_path ~/miniconda3/bin
+#conda config --set auto_activate_base false
 
 # Java
+fish_add_path ~/Applications/apache-ant-1.10.13/bin
 fish_add_path /opt/homebrew/opt/openjdk@17/bin
+set ANT_HOME /opt/homebrew/bin/ant
+set JAVA_HOME /opt/homebrew/opt/openjdk@17
 set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 # alias javacu 'javac -J-Dfile.encoding=UTF-8'
 # alias javau 'java -Dfile.encoding=UTF-8'
@@ -44,3 +38,12 @@ alias reboot 'shutdown -r now'
 alias えぃｔ 'exit'
 abbr targz 'tar -zcvf' # targz filename.tar.gz dirname
 abbr untargz 'tar -zxvf' # untargz filename.tar.gz
+alias matlab '/Applications/MATLAB_R2022a.app/bin/matlab -nodesktop'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /Users/fumi/miniconda3/bin/conda
+    eval /Users/fumi/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+
