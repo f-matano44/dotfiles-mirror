@@ -17,8 +17,8 @@ fish_add_path ~/miniconda3/bin
 
 # Java
 fish_add_path ~/Applications/apache-ant-1.10.13/bin
+fish_add_path ~/Applications/apache-maven-3.9.2/bin
 fish_add_path /opt/homebrew/opt/openjdk@17/bin
-set ANT_HOME /opt/homebrew/bin/ant
 set JAVA_HOME /opt/homebrew/opt/openjdk@17
 set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 # alias javacu 'javac -J-Dfile.encoding=UTF-8'
