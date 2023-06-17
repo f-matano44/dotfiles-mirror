@@ -44,3 +44,5 @@ if test -f /Users/fumi/miniconda3/bin/conda
 end
 # <<< conda initialize <<<
 
+# atcoder
+alias atjava "cat ~/dotfiles/Main.java > ./Main.java"
