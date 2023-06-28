@@ -14,7 +14,9 @@ public class Main {
             byte check = -1;
 
             try (final var sc = new MyScanner(System.in)) {
-                // ここで処理を実行
+                // solve ここから
+
+                // solve ここまで
             } catch (Exception e) {
                 e.printStackTrace();
                 System.exit(1);
