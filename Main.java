@@ -52,6 +52,10 @@ public class Main {
             return sc.next();
         }
 
+        public String nextLine() {
+            return sc.nextLine();
+        }
+
         public int nextInt() {
             return Integer.parseInt(sc.next());
         }
