@@ -1,6 +1,7 @@
 /**
  * atcoder template in Java @ MIT License
  * Copyright 2023 Fumiyoshi MATANO
+ * 参考資料: https://qiita.com/p_shiki37/items/a0f6aac33bf60f5f65e4
  */
 
 import java.util.*;
