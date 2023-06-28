@@ -1,78 +1,107 @@
-/**
- * atcoder template in Java @ MIT License
- * Copyright 2023 Fumiyoshi MATANO
- * 参考資料: https://qiita.com/p_shiki37/items/a0f6aac33bf60f5f65e4
- */
-
 import java.util.*;
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-public class Main {
+
+/**
+ * atcoder template in Java @ MIT License
+ * Copyright 2023 Fumiyoshi MATANO
+ * 一度全体を眺めて, 全体の構造を把握してから使うことを強く推奨します.
+ */
+public final class Main {
+    /**
+     * 問題の計算を行うメソッド
+     *
+     * @param pw PrintWriter
+     * @param sc MyScanner
+     * @return status 回答のステータス
+     *      1 (true)        : 回答が Yes のとき (出力が文字列 "Yes" でない可能性に注意 ex:"YES")
+     *      0 (false)       : 回答が No のとき  (出力が文字列 "No"  でない可能性に注意 ex:"NO")
+     *      other (default) : 回答が Yes/No 形式ではないとき
+     */
+    private static final byte solve(
+        final PrintWriter pw, final MyScanner sc
+    ) {
+        byte status = -1;
+
+        // ここに回答を記述
+        
+        return status;
+    }
+
+
+    /**
+     * テンプレート編集のとき以外は触る必要のない main 関数
+     * @param args おそらく使わないであろうコマンドライン引数
+     */
     public static void main(String[] args) {
-        try (final var pw = new PrintWriter(System.out)) {
-            byte check = -1;
-
-            try (final var sc = new MyScanner(System.in)) {
-                // solve ここから
-
-                // solve ここまで
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.exit(1);
-            }
-
-            if (check == 1) {
+        try ( // 入力元と出力先を設定
+            final var pw = new PrintWriter(System.out);
+            final var sc = new MyScanner(System.in);
+        ) {
+            // 計算して
+            final byte status = solve(pw, sc);
+            // 判定して
+            if (status == 1) {
                 pw.println("Yes");
-            } else if (check == 0) {
+                // pw.println("YES");
+            } else if (status == 0) {
                 pw.println("No");
+                // pw.println("NO");
             } else /* check == -1 */ {
                 // Nothing to do.
             }
-
-            pw.flush();
+            pw.flush(); // 出力
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.exit(1);
         }
     }
 
 
+    /**
+     * なんちゃって自作 Scanner: メソッドは足りなければ増やす……かもしれない
+     * 基本的な使い方は java.util.Scanner と同じ
+     * 参考資料: https://qiita.com/p_shiki37/items/a0f6aac33bf60f5f65e4
+     */
     private static final class MyScanner implements AutoCloseable {
-        private Scanner sc;
+        private final java.util.Scanner sc;
 
-        public MyScanner(InputStream in) {
+        public MyScanner(final InputStream in) {
             this.sc = new Scanner(in);
         }
 
         @Override
-        public void close() {
+        public final void close() {
             sc.close();
         }
 
-        public String next() {
+        public final String next() {
             return sc.next();
         }
 
-        public String nextLine() {
+        public final String nextLine() {
             return sc.nextLine();
         }
 
-        public int nextInt() {
+        public final int nextInt() {
             return Integer.parseInt(sc.next());
         }
 
-        public long nextLong() {
+        public final long nextLong() {
             return Long.parseLong(sc.next());
         }
 
-        public BigInteger nextBigInteger() {
+        public final BigInteger nextBigInteger() {
             return new BigInteger(sc.next());
         }
 
-        public double nextDouble() {
+        public final double nextDouble() {
             return Double.parseDouble(sc.next());
         }
 
-        public BigDecimal nextBigDecimal(){
+        public final BigDecimal nextBigDecimal(){
             return new BigDecimal(sc.next());
         }
     }
