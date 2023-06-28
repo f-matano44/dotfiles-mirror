@@ -11,7 +11,7 @@ public class Main {
         try (final var pw = new PrintWriter(System.out)) {
             byte check = -1;
 
-            try (final var sc = new Scanner(System.in)) {
+            try (final var sc = new MyScanner(System.in)) {
                 // ここで処理を実行
             } catch (Exception e) {
                 e.printStackTrace();
@@ -27,6 +27,36 @@ public class Main {
             }
 
             pw.flush();
+        }
+    }
+
+
+    private static final class MyScanner implements AutoCloseable {
+        private Scanner sc;
+
+        public MyScanner(InputStream in) {
+            this.sc = new Scanner(in);
+        }
+
+        @Override
+        public void close() {
+            sc.close();
+        }
+
+        public String next() {
+            return sc.next();
+        }
+
+        public int nextInt() {
+            return Integer.parseInt(sc.next());
+        }
+
+        public long nextLong() {
+            return Long.parseLong(sc.next());
+        }
+
+        public double nextDouble() {
+            return Double.parseDouble(sc.next());
         }
     }
 }
