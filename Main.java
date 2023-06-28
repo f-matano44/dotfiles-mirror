@@ -5,6 +5,8 @@
 
 import java.util.*;
 import java.io.*;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
@@ -55,8 +57,16 @@ public class Main {
             return Long.parseLong(sc.next());
         }
 
+        public BigInteger nextBigInteger() {
+            return new BigInteger(sc.next());
+        }
+
         public double nextDouble() {
             return Double.parseDouble(sc.next());
+        }
+
+        public BigDecimal nextBigDecimal(){
+            return new BigDecimal(sc.next());
         }
     }
 }
