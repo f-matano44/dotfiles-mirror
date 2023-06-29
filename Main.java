@@ -41,15 +41,15 @@ public final class Main {
             final var sc = new MyScanner(System.in);
         ) {
             // 計算して
-            final byte status = solve(pw, sc);
+            final byte ans = solve(pw, sc);
             // 判定して
-            if (status == 1) {
+            if (ans == 1) {
                 pw.println("Yes");
                 // pw.println("YES");
-            } else if (status == 0) {
+            } else if (ans == 0) {
                 pw.println("No");
                 // pw.println("NO");
-            } else /* check == -1 */ {
+            } else /* ans == -1 */ {
                 // Nothing to do.
             }
             pw.flush(); // 出力
