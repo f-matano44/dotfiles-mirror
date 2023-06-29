@@ -1,28 +1,28 @@
+/**
+ * atcoder template in Java @ MIT License
+ * Copyright 2023 Fumiyoshi MATANO
+ * 一度全体を眺めて, 全体の構造を把握してから使うことを強く推奨します.
+ */
+
 import java.util.*;
 import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
 
-/**
- * atcoder template in Java @ MIT License
- * Copyright 2023 Fumiyoshi MATANO
- * 一度全体を眺めて, 全体の構造を把握してから使うことを強く推奨します.
- */
 public final class Main {
+    // グローバル変数
+    private final MyScanner sc;     // 入力はここから拾う
+    private final PrintWriter pw;   // 出力はここに流す
+
     /**
      * 問題の計算を行うメソッド
-     *
-     * @param pw PrintWriter
-     * @param sc MyScanner
      * @return status 回答のステータス
      *      1 (true)        : 回答が Yes のとき (出力が文字列 "Yes" でない可能性に注意 ex:"YES")
      *      0 (false)       : 回答が No のとき  (出力が文字列 "No"  でない可能性に注意 ex:"NO")
      *      other (default) : 回答が Yes/No 形式ではないとき
      */
-    private static final byte solve(
-        final PrintWriter pw, final MyScanner sc
-    ) {
+    private final byte solve() {
         byte status = -1;
 
         // ここに回答を記述
@@ -37,11 +37,11 @@ public final class Main {
      */
     public static void main(String[] args) {
         try ( // 入力元と出力先を設定
-            final var pw = new PrintWriter(System.out);
             final var sc = new MyScanner(System.in);
+            final var pw = new PrintWriter(System.out);
         ) {
             // 計算して
-            final byte ans = solve(pw, sc);
+            final byte ans = new Main(sc, pw).solve();
             // 判定して
             if (ans == 1) {
                 pw.println("Yes");
@@ -52,11 +52,18 @@ public final class Main {
             } else /* ans == -1 */ {
                 // Nothing to do.
             }
-            pw.flush(); // 出力
+            pw.flush(); // 出力する
         } catch (Exception e) {
             e.printStackTrace();
             System.exit(1);
         }
+    }
+
+
+    /** Main クラスのコンストラクタ. 入出力のやり取りくらい. */
+    public Main(final MyScanner sc, final PrintWriter pw) {
+        this.sc = sc;
+        this.pw = pw;
     }
 
 
