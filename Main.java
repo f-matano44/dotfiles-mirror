@@ -41,12 +41,12 @@ public final class Main {
             final var pw = new PrintWriter(System.out);
         ) {
             // 計算して
-            final byte ans = new Main(sc, pw).solve();
+            final byte status = new Main(sc, pw).solve();
             // 判定して
-            if (ans == 1) {
+            if (status == 1) {
                 pw.println("Yes");
                 // pw.println("YES");
-            } else if (ans == 0) {
+            } else if (status == 0) {
                 pw.println("No");
                 // pw.println("NO");
             } else /* ans == -1 */ {
