@@ -1,30 +1,28 @@
-/**
- * atcoder template in Java @ MIT License
- * Copyright 2023 Fumiyoshi MATANO
- * 一度全体を眺めて, 全体の構造を把握してから使うことを強く推奨します.
- */
+/** atcoder template in Java @ CC0 */
 
 import java.util.*;
 import java.io.*;
 
 
 public final class Main {
-    // グローバル変数
     private final Scanner sc;       // 入力はここから拾う
     private final PrintWriter pw;   // 出力はここに流す
+    // グローバル変数ここから
+    
+    // グローバル変数ここまで
 
     /**
      * 問題の計算を行うメソッド
      * @return status 回答のステータス
-     *      1 (true)        : 回答が Yes のとき (出力が文字列 "Yes" でない可能性に注意 ex:"YES")
-     *      0 (false)       : 回答が No のとき  (出力が文字列 "No"  でない可能性に注意 ex:"NO")
+     *      true            : 回答が Yes のとき (出力が文字列 "Yes" でない可能性に注意 ex:"YES")
+     *      false           : 回答が No のとき  (出力が文字列 "No"  でない可能性に注意 ex:"NO")
      *      null (default)  : 回答が Yes/No 形式ではないとき
      */
     private final Boolean solve() {
         Boolean status = null;
 
         // ここに回答を記述
-        
+
         return status;
     }
 
