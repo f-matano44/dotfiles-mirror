@@ -46,3 +46,6 @@ end
 
 # atcoder
 alias atjava "cat ~/dotfiles/Main.java > ./Main.java"
+abbr attest "oj t -c "java Main.java" -d ./test/"
+abbr atsubm4 "acc submit Main.java -- -l 4005"
+abbr atsubm5 "acc submit Main.java -- -l 5005"
