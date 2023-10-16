@@ -5,8 +5,9 @@ import java.io.*;
 
 
 public final class Main {
-    private final Scanner sc;       // 入力はここから拾う
-    private final PrintWriter pw;   // 出力はここに流す
+    // 入力と出力
+    private static final Scanner sc = new Scanner(System.in);
+    private static final PrintWriter pw = new PrintWriter(System.out);
     // グローバル変数ここから
     
     // グローバル変数ここまで
@@ -27,40 +28,21 @@ public final class Main {
     }
 
 
-    /**
-     * テンプレート編集のとき以外は触る必要のない main 関数
-     * @param args おそらく使わないであろうコマンドライン引数
-     */
+    /** テンプレート編集のとき以外は触る必要のない main 関数 */
     public static void main(String[] args) {
-        try ( // 入力元と出力先を設定
-            final var sc = new Scanner(System.in);
-            final var pw = new PrintWriter(System.out);
-        ) {
-            // 計算して
-            final Boolean status = new Main(sc, pw).solve();
-            // 判定して
-            if(status != null) {
-                if (status) {
-                    pw.println("Yes");
-                    // pw.println("YES");
-                } else {
-                    pw.println("No");
-                    // pw.println("NO");
-                }
-            } else /* status == null */ {
-                // Nothing to do.
-            }
-            pw.flush(); // 出力する
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(1);
+        // 計算して
+        final Boolean status = new Main().solve();
+        // 判定して
+        if (status != null && status) {
+            pw.println("Yes");
+            // pw.println("YES");
+        } else if (status != null && !status) {
+            pw.println("No");
+            // pw.println("NO");
+        } else /* status == null */ {
+            // Nothing to do.
         }
-    }
-
-
-    /** Main クラスのコンストラクタ. 入出力のやり取りくらい. */
-    public Main(final Scanner sc, final PrintWriter pw) {
-        this.sc = sc;
-        this.pw = pw;
+        // 出力する
+        pw.flush();
     }
 }
