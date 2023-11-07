@@ -21,9 +21,6 @@ fish_add_path /opt/homebrew/opt/openjdk@17/bin
 set JAVA_HOME /opt/homebrew/opt/openjdk@17
 set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk@17/include"
 
-# asdf
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
-
 # Docker
 abbr d "docker"
 abbr dc "docker-compose"
@@ -35,7 +32,7 @@ alias reboot 'shutdown -r now'
 alias えぃｔ 'exit'
 abbr targz 'tar -zcvf' # targz filename.tar.gz dirname
 abbr untargz 'tar -zxvf' # untargz filename.tar.gz
-alias matlab '/Applications/MATLAB_R2022a.app/bin/matlab -nodesktop'
+alias matlab-cli '/Applications/MATLAB_R2022a.app/bin/matlab -nodesktop'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
