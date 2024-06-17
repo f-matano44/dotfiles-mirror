@@ -16,7 +16,7 @@ set ambiwidth=double " 一部記号が崩れる問題を解決
 set guifont=inconsolata:h16 " font(Windows, mac)
 set cursorline " カーソルラインをハイライト表示
 " ステータスバーの表示
-set statusline=%f%m%r%h%w%=[行:%l][列:%c][%{&fileencoding}]%y
+set statusline=%F%m%r%h%w%=[行:%l][列:%c][%{&fileencoding}]%y
 set laststatus=2 " ステータスバーを常に表示
 
 " 特定の拡張子に指定の syntax を強制
