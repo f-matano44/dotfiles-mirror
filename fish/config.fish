@@ -7,11 +7,7 @@ if status is-interactive
 end
 
 # homebrew
-# ref: https://blog.mksc.jp/contents/apple-silicon/
-## Intel
-eval (/usr/local/bin/brew shellenv)
-alias 86brew 'arch -x86_64 /usr/local/bin/brew'
-## Apple Silicon
+# if use x64: https://blog.mksc.jp/contents/apple-silicon/
 eval (/opt/homebrew/bin/brew shellenv)
 
 # Java
@@ -43,6 +39,6 @@ conda activate p310
 
 # atcoder
 alias atjava "cat ~/dotfiles/Main.java > ./Main.java"
-abbr attest "oj t -c \"java Main.java\" -d ./test/"
-abbr atsubm4 "acc submit Main.java -- -l 4005"
-abbr atsubm5 "acc submit Main.java -- -l 5005"
+# abbr attest "oj t -c \"java Main.java\" -d ./test/"
+# abbr atsubm4 "acc submit Main.java -- -l 4005"
+# abbr atsubm5 "acc submit Main.java -- -l 5005"
