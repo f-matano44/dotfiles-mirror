@@ -47,3 +47,5 @@ end
 # <<< conda initialize <<<
 conda activate p310
 
+# LaTeX
+fish_add_path /usr/local/texlive/2024basic/bin/universal-darwin
