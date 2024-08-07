@@ -1,2 +1,4 @@
 vim/.netrwhist
 *.class
+.swp
+old_*
