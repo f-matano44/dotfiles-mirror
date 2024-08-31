@@ -4,7 +4,6 @@ set -e
 
 CURRENT=`pwd`
 
-
 # make trush
 date_str=$(date +%Y%m%d%H%M%S)
 random_str=$(LC_ALL=C tr -dc 'a-zA-Z0-9' < /dev/random | fold -w 8 | head -n 1)
@@ -47,6 +46,20 @@ if [ -f "${HOME}/.config/fish/config.fish" ]; then
     mv ${HOME}/.config/fish/config.fish ${date_ramdom}/config.fish
 fi
 ln -s ${CURRENT}/fish/config.fish ${HOME}/.config/fish/config.fish
+## vscodium
+OS=$(uname)
+if [ "$OS" = "Darwin" ]; then
+    if [ -f "${HOME}/Library/Application Support/VSCodium/User/settings.json" ]; then
+        mv "${HOME}/Library/Application Support/VSCodium/User/settings.json" \
+            ${date_ramdom}/codium_config.json
+    fi
+    ln -s ${CURRENT}/vscodium/settings.json \
+        "${HOME}/Library/Application Support/VSCodium/User/settings.json"
+elif [ "$OS" = "Linux" ]; then
+    echo aaa
+else
+    echo "Unsupported OS: $OS"
+fi
 
 
 # install codium extension
