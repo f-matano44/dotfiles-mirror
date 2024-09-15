@@ -57,7 +57,6 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "cSpell.customDictionaries": {},
     "editor.fontLigatures": true,
-    "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniforge/base/envs/p310/bin/python",
     "files.associations": {
         "CHANGELOG": "plaintext",
         "*.bash": "shellscript"
@@ -70,18 +69,11 @@
     "javascript.inlayHints.variableTypes.enabled": true,
     "extensions.supportUntrustedWorkspaces": {},
     "MATLAB.installPath": "/Applications/MATLAB_R2023b.app",
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontWeight": "bold",
     "editor.fontWeight": "bold",
     "java.checkstyle.configuration": "google_checks.xml",
     "editor.stickyScroll.enabled": true,
-    "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-17",
-            "path": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
-            "default": true
-        }
-    ],
     "workbench.editorAssociations": {
         "*.lock": "default",
         "*.mlapp": "default"
@@ -102,5 +94,9 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "git.replaceTagsWhenPull": true,
     "svg.preview.mode": "img",
-    "workbench.productIconTheme": "bongocat"
+    "workbench.productIconTheme": "bongocat",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "python.condaPath": "~/.miniforge3/condabin/conda"
 }

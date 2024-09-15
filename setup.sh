@@ -56,7 +56,12 @@ if [ "$OS" = "Darwin" ]; then
     ln -s ${CURRENT}/vscodium/settings.json \
         "${HOME}/Library/Application Support/VSCodium/User/settings.json"
 elif [ "$OS" = "Linux" ]; then
-    echo aaa
+    if [ -f "${HOME}/.config/VSCodium/User/settings.json" ]; then
+        mv "${HOME}/.config/VSCodium/User/settings.json" \
+            ${date_ramdom}/codium_config.json
+    fi
+    ln -s ${CURRENT}/vscodium/settings.json \
+        "${HOME}/.config/VSCodium/User/settings.json"
 else
     echo "Unsupported OS: $OS"
 fi
@@ -67,7 +72,7 @@ extensionID=(
     "bungcip.better-toml"
     "ms-python.black-formatter"
     "pixl-garden.BongoCat"
-    "shengchen.vscode-checkstyle"
+    # "shengchen.vscode-checkstyle"
     "streetsidesoftware.code-spell-checker"
     "janisdd.vscode-edit-csv"
     "usernamehw.errorlens"
