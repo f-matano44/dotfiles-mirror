@@ -69,7 +69,7 @@
     "javascript.inlayHints.variableTypes.enabled": true,
     "extensions.supportUntrustedWorkspaces": {},
     "MATLAB.installPath": "/Applications/MATLAB_R2023b.app",
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
     "editor.fontWeight": "bold",
     "java.checkstyle.configuration": "google_checks.xml",
