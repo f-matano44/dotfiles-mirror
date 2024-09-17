@@ -24,7 +24,7 @@ switch (uname)
         # fish_add_path /usr/local/texlive/2024basic/bin/universal-darwin
 
         # conda
-        eval "(/Users/fumi/.miniforge3/bin/conda shell.fish hook)"
+        eval /Users/fumi/.miniforge3/bin/conda "shell.fish" "hook" $argv | source
         conda activate p310
 
     case "Linux"  # Linux
