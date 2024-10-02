@@ -95,8 +95,9 @@
     "git.replaceTagsWhenPull": true,
     "svg.preview.mode": "img",
     "workbench.productIconTheme": "bongocat",
-    "gitlens.currentLine.enabled": false,
     "gitlens.codeLens.enabled": false,
     "terminal.integrated.defaultProfile.linux": "fish",
-    "python.condaPath": "~/.miniforge3/condabin/conda"
+    "python.condaPath": "~/.miniforge3/condabin/conda",
+    "terminal.integrated.inheritEnv": false,
+    "python.terminal.activateEnvironment": false
 }
