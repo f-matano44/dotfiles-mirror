@@ -41,6 +41,9 @@ switch (uname)
         end
         # <<< conda initialize <<<
         conda activate p310
+
+        # gradle
+        fish_add_path ~/.local/bin/gradle/bin/
 end
 
 
