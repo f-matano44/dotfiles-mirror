@@ -13,7 +13,7 @@ switch (uname)
         eval (/opt/homebrew/bin/brew shellenv)
 
         # Java
-        set -gx JAVA_HOME (/usr/libexec/java_home -v "17")
+        set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
         fish_add_path $JAVA_HOME/bin
         set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
