@@ -1,6 +1,6 @@
 [user]
 	name = Fumiyoshi MATANO
-	email = cs232038@meiji.ac.jp
+	email = fumiyoshi.matano@gmail.com
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = codium --wait
