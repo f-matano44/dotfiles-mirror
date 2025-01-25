@@ -20,12 +20,13 @@ switch (uname)
         # MATLAB
         alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
 
-        # LaTeX
-        # fish_add_path /usr/local/texlive/2024basic/bin/universal-darwin
+        # pyenv
+        pyenv init - fish | source
+        pyenv global 3.10
 
-        # conda
-        eval /Users/fumi/.miniforge3/bin/conda "shell.fish" "hook" $argv | source
-        conda activate p310
+        # Ruby
+        fish_add_path $HOME/.rbenv/bin
+        eval "$(rbenv init -)"
 
     case "Linux"  # Linux
         # >>> conda initialize >>>
