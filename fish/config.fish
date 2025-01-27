@@ -18,7 +18,7 @@ switch (uname)
         set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
         # MATLAB
-        alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
+        # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
 
         # pyenv
         pyenv init - fish | source
@@ -27,6 +27,9 @@ switch (uname)
         # Ruby
         fish_add_path $HOME/.rbenv/bin
         eval "$(rbenv init -)"
+
+        # coreutils
+        fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
     case "Linux"  # Linux
         # >>> conda initialize >>>
