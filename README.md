@@ -3,6 +3,18 @@ MIT License (c) 2025 f-matano44
 I use on mint & macOS.
 
 
+## Dependency
+* fish
+* pyenv
+    * python 3.10
+* vscodium
+
+### macOS
+* Homebrew
+* Java 21
+* rbenv
+
+
 ## How to setup
 ```sh
 git clone https://gitlab.com/f-matano44/dotfiles.git
