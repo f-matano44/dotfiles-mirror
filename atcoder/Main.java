@@ -9,14 +9,14 @@ public final class Main {
     private static final Scanner sc = new Scanner(System.in);
     private static final PrintWriter pw = new PrintWriter(System.out);
     // グローバル変数ここから
-    
+
     // グローバル変数ここまで
 
     /**
      * 問題の計算を行うメソッド
      * @return status 回答のステータス
-     *      true            : 回答が Yes のとき (出力が文字列 "Yes" でない可能性に注意 ex:"YES")
-     *      false           : 回答が No のとき  (出力が文字列 "No"  でない可能性に注意 ex:"NO")
+     *      true            : 回答が Yes のとき (出力が　"Yes" でない可能性に注意: e.g. YES)
+     *      false           : 回答が No のとき  (出力が　"No"  でない可能性に注意: e.g. NO)
      *      null (default)  : 回答が Yes/No 形式ではないとき
      */
     private final Boolean solve() {
@@ -33,13 +33,15 @@ public final class Main {
         // 計算して
         final Boolean status = new Main().solve();
         // 判定して
-        if (status != null && status) {
-            pw.println("Yes");
-            // pw.println("YES");
-        } else if (status != null && !status) {
-            pw.println("No");
-            // pw.println("NO");
-        } else /* status == null */ {
+        try {
+            if (status) {
+                pw.println("Yes");
+                // pw.println("YES");
+            } else {
+                pw.println("No");
+                // pw.println("NO");
+            }
+        } catch (final NullPointerException e) {
             // Nothing to do.
         }
         // 出力する
