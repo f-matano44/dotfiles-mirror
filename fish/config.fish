@@ -22,34 +22,26 @@ switch (uname)
 
         # pyenv
         pyenv init - fish | source
-        pyenv global 3.10
 
         # Ruby
         fish_add_path $HOME/.rbenv/bin
-        eval "$(rbenv init -)"
+        rbenv init - | source
 
         # coreutils
         fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
     case "Linux"  # Linux
-        # >>> conda initialize >>>
-        # !! Contents within this block are managed by 'conda init' !!
-        if test -f /home/fumi/.miniforge3/bin/conda
-            eval /home/fumi/.miniforge3/bin/conda "shell.fish" "hook" $argv | source
-        else
-            if test -f "/home/fumi/.miniforge3/etc/fish/conf.d/conda.fish"
-                . "/home/fumi/.miniforge3/etc/fish/conf.d/conda.fish"
-            else
-                set -x PATH "/home/fumi/.miniforge3/bin" $PATH
-            end
-        end
-        # <<< conda initialize <<<
-        conda activate p310
+        # pyenv
+        set -Ux PYENV_ROOT $HOME/.pyenv
+        fish_add_path $PYENV_ROOT/bin
+        pyenv init - fish | source
 
         # gradle
         fish_add_path ~/.local/bin/gradle/bin/
 end
 
+# pyenv
+pyenv global 3.10
 
 # other alias
 alias halt 'shutdown -h now'
