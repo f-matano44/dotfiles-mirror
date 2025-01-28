@@ -20,9 +20,6 @@ switch (uname)
         # MATLAB
         # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
 
-        # pyenv
-        pyenv init - fish | source
-
         # Ruby
         fish_add_path $HOME/.rbenv/bin
         rbenv init - | source
@@ -34,14 +31,15 @@ switch (uname)
         # pyenv
         set -Ux PYENV_ROOT $HOME/.pyenv
         fish_add_path $PYENV_ROOT/bin
-        pyenv init - fish | source
 
         # gradle
         fish_add_path ~/.local/bin/gradle/bin/
 end
 
 # pyenv
+pyenv init - fish | source
 pyenv global 3.10
+source ~/p310/bin/activate.fish
 
 # other alias
 alias halt 'shutdown -h now'
