@@ -38,8 +38,8 @@ end
 
 # pyenv
 pyenv init - fish | source
-pyenv global 3.10
-source ~/p310/bin/activate.fish
+pyenv global 3.11
+source ~/.p311/bin/activate.fish
 
 # other alias
 alias halt 'shutdown -h now'
