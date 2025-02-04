@@ -38,7 +38,7 @@ end
 
 # pyenv
 pyenv init - fish | source
-pyenv global 3.11
+pyenv global graalpy-community-24
 
 # other alias
 alias halt 'shutdown -h now'
