@@ -37,6 +37,7 @@ switch (uname)
 
         # wine
         # WINEARCH=win32 wineboot
+        # winetricks --self-update
 end
 
 # pyenv
