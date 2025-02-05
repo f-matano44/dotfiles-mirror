@@ -36,7 +36,7 @@ switch (uname)
         fish_add_path ~/.local/bin/gradle/bin/
 
         # wine
-        WINEARCH=win32 wineboot
+        # WINEARCH=win32 wineboot
 end
 
 # pyenv
