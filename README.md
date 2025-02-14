@@ -5,8 +5,7 @@ I use on mint & macOS.
 
 ## Dependency
 * fish
-* pyenv
-    * python 3.10
+* pyenv (python 3.11)
 * vscodium
 
 ### macOS
@@ -24,4 +23,4 @@ cd ./dotfiles/ && sh ./setup.sh
 
 ## Included file(s)
 [Lucario](https://github.com/raphamorim/lucario) (dotfiles/vim/lucario.vim)<br>
-**Licence**: MIT © [Raphael Amorim](https://github.com/raphamorim).<br>
+**Licence**: MIT (c) [Raphael Amorim](https://github.com/raphamorim).<br>
