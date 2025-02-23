@@ -42,7 +42,7 @@ end
 
 # pyenv
 pyenv init - fish | source
-pyenv global 3.11
+pyenv shell 3.11
 
 # other alias
 alias halt 'shutdown -h now'
