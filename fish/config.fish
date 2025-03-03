@@ -25,7 +25,7 @@ switch (uname)
         rbenv init - | source
 
         # coreutils
-        fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
+        # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
     case "Linux"  # Linux
         # pyenv
