@@ -38,11 +38,14 @@ switch (uname)
         # wine
         # WINEARCH=win32 wineboot
         # winetricks --self-update
+
+        # hugo
+        fish_add_path ~/.local/bin/hugo
 end
 
 # pyenv
 pyenv init - fish | source
-pyenv shell 3.11
+pyenv global 3.11
 
 # other alias
 alias halt 'shutdown -h now'
