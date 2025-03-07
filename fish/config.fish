@@ -41,6 +41,9 @@ switch (uname)
 
         # hugo
         fish_add_path ~/.local/bin/hugo
+
+        # amdgpu
+        fish_add_path /opt/rocm-6.3.4/bin
 end
 
 # pyenv
