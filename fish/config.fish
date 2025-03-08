@@ -44,6 +44,7 @@ switch (uname)
 
         # amdgpu
         fish_add_path /opt/rocm-6.3.4/bin
+        set HSA_OVERRIDE_GFX_VERSION 11.0.1
 end
 
 # pyenv
