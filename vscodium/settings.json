@@ -99,5 +99,6 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "python.condaPath": "~/.miniforge3/condabin/conda",
     "terminal.integrated.inheritEnv": false,
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "chat.commandCenter.enabled": false
 }
