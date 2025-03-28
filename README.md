@@ -17,7 +17,7 @@ I use on mint & macOS.
 ## How to setup
 ```sh
 git clone https://gitlab.com/f-matano44/dotfiles.git
-cd ./dotfiles/ && sh ./setup.sh
+cd ./dotfiles/ && bash ./setup.sh
 ```
 
 
