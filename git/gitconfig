@@ -1,7 +1,6 @@
 [user]
 	name = Fumiyoshi MATANO
 	email = fumiyoshi.matano@gmail.com
-	signingkey = 3D28ADD005A85A07
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = codium --wait
