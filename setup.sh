@@ -36,6 +36,9 @@ if [ -f "${HOME}/.gitconfig" ]; then
     mv ${HOME}/.gitconfig ${date_ramdom}/gitconfig
 fi
 ln -s ${CURRENT}/git/gitconfig ${HOME}/.gitconfig
+## gitconfig_local (for gpg signing)
+touch ${HOME}/.gitconfig_local
+ln -sfn ${HOME}/.gitconfig_local ${CURRENT}/git/gitconfig_local
 ## gitignore_global
 if [ -f "${HOME}/.gitignore_global" ]; then
     mv ${HOME}/.gitignore_global ${date_ramdom}/gitignore_global

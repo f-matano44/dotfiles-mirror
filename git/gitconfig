@@ -1,15 +1,22 @@
 [user]
 	name = Fumiyoshi MATANO
 	email = fumiyoshi.matano@gmail.com
+
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = codium --wait
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [init]
 	defaultBranch = main
+
 [commit]
 	gpgsign = true
+
+[include]
+    path = ~/.gitconfig_local
