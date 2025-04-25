@@ -5,7 +5,7 @@ set -e
 CURRENT=`pwd`
 
 # make trush
-date_str=$(date +%Y%m%d%H%M%S)
+date_str=$(date +%Y%m%dT%H%M%S)
 random_str=$(LC_ALL=C tr -dc 'a-zA-Z0-9' < /dev/random | fold -w 8 | head -n 1)
 date_ramdom=old_${date_str}_${random_str}
 mkdir ${CURRENT}/${date_ramdom}
