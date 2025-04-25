@@ -39,8 +39,10 @@ switch (uname)
         # WINEARCH=win32 wineboot
         # winetricks --self-update
 
-        # hugo
-        fish_add_path ~/.local/bin/hugo
+        # hugo (skip if installed via snap)
+        if not type -q hugo
+            fish_add_path ~/.local/bin/hugo
+        end
 
         # amdgpu
         fish_add_path /opt/rocm-6.3.4/bin
@@ -51,15 +53,17 @@ switch (uname)
 end
 
 # pyenv
-pyenv init - fish | source
-pyenv global 3.11
+if type -q pyenv
+    pyenv init - fish | source
+    pyenv global 3.11
+end
 
 # other alias
 alias halt 'shutdown -h now'
 alias reboot 'shutdown -r now'
 alias えぃｔ 'exit'
-abbr targz 'tar -zcvf' # targz filename.tar.gz dirname
-abbr untargz 'tar -zxvf' # untargz filename.tar.gz
+abbr targz 'tar -zcvf'      # targz filename.tar.gz dirname
+abbr untargz 'tar -zxvf'    # untargz filename.tar.gz
 
 # atcoder
 alias atjava "mkdir a b c d && \
