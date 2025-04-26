@@ -22,12 +22,14 @@ switch (uname)
 
         # Ruby
         fish_add_path $HOME/.rbenv/bin
-        rbenv init - | source
+        if type -q rbenv
+            rbenv init - | source
+        end
 
         # coreutils
         # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
-    case "Linux"  # Linux
+    case "Linux"
         # pyenv
         set -Ux PYENV_ROOT $HOME/.pyenv
         fish_add_path $PYENV_ROOT/bin
@@ -46,10 +48,11 @@ switch (uname)
 
         # amdgpu
         fish_add_path /opt/rocm-6.3.4/bin
-        # set HSA_OVERRIDE_GFX_VERSION 11.0.1
 
         # doas
-        alias sudo doas
+        if type -q doas
+            alias sudo doas
+        end
 end
 
 # pyenv
@@ -62,15 +65,12 @@ end
 alias halt 'shutdown -h now'
 alias reboot 'shutdown -r now'
 alias えぃｔ 'exit'
-abbr targz 'tar -zcvf'      # targz filename.tar.gz dirname
-abbr untargz 'tar -zxvf'    # untargz filename.tar.gz
+alias targz 'tar -zcvf'    # targz filename.tar.gz dirname
+alias untargz 'tar -zxvf'  # untargz filename.tar.gz
 
 # atcoder
-alias atjava "mkdir a b c d && \
+alias atc_java "mkdir a b c d && \
     cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
     cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
     cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
     cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
-# abbr attest "oj t -c \"java Main.java\" -d ./test/"
-# abbr atsubm4 "acc submit Main.java -- -l 4005"
-# abbr atsubm5 "acc submit Main.java -- -l 5005"
