@@ -3,7 +3,9 @@
 
 # Commands to run in interactive sessions can go here
 if status is-interactive
-    set fish_greeting # remove intro message
+    set LAST_LOGIN (last -n 3 (whoami) | head -n 3 | tail -n 1 |\
+                    awk '{ print $4, $5, $6, $7 }')
+    set fish_greeting "Last login: $LAST_LOGIN"
 end
 
 switch (uname)
