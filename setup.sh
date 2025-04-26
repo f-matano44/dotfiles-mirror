@@ -1,21 +1,22 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
 
-CURRENT=`pwd`
+DOTFILES=`pwd`
 
-# make trush
-date_str=$(date +%Y%m%dT%H%M%S)
-random_str=$(LC_ALL=C tr -dc 'a-zA-Z0-9' < /dev/random | fold -w 8 | head -n 1)
-date_ramdom=old_${date_str}_${random_str}
-mkdir ${CURRENT}/${date_ramdom}
+# make backup folder
+TIMESTAMP=$(date +%Y%m%dT%H%M%S)
+RANDOM_ID=$(printf "%08d" $(fish -c "random 0 99999999"))
+BACKUP_FOLDER=${DOTFILES}/.old/${TIMESTAMP}_${RANDOM_ID}
+mkdir -p ${BACKUP_FOLDER}
 
 
 # make dir
-if [ ! -d ${HOME}/.vim/colors ]; then
-    mkdir -p ${HOME}/.vim/colors
+
+if [ ! -d ${HOME}/.vim/colors/ ]; then
+    mkdir -p ${HOME}/.vim/colors/
 fi
-if [ ! -d ${HOME}/.vim/colors ]; then
+if [ ! -d ${HOME}/.config/fish/ ]; then
     mkdir -p ${HOME}/.config/fish/
 fi
 
@@ -23,47 +24,47 @@ fi
 # create symbolic link
 ## lucario
 if [ -f ${HOME}/.vim/colors/lucario.vim ]; then
-    mv ${HOME}/.vim/colors/lucario.vim ${date_ramdom}/lucario.vim
+    mv ${HOME}/.vim/colors/lucario.vim ${BACKUP_FOLDER}/lucario.vim
 fi
-ln -s ${CURRENT}/vim/lucario.vim ${HOME}/.vim/colors/lucario.vim
+ln -s ${DOTFILES}/vim/lucario.vim ${HOME}/.vim/colors/lucario.vim
 ## vimrc
 if [ -f "${HOME}/.vimrc" ]; then
-    mv ${HOME}/.vimrc ${date_ramdom}/vimrc
+    mv ${HOME}/.vimrc ${BACKUP_FOLDER}/vimrc
 fi
-ln -s ${CURRENT}/vim/vimrc ${HOME}/.vimrc
+ln -s ${DOTFILES}/vim/vimrc ${HOME}/.vimrc
 ## gitconfig
 if [ -f "${HOME}/.gitconfig" ]; then
-    mv ${HOME}/.gitconfig ${date_ramdom}/gitconfig
+    mv ${HOME}/.gitconfig ${BACKUP_FOLDER}/gitconfig
 fi
-ln -s ${CURRENT}/git/gitconfig ${HOME}/.gitconfig
+ln -s ${DOTFILES}/git/gitconfig ${HOME}/.gitconfig
 ## gitconfig_local (for gpg signing)
 touch ${HOME}/.gitconfig_local
-ln -sfn ${HOME}/.gitconfig_local ${CURRENT}/git/gitconfig_local
+ln -sfn ${HOME}/.gitconfig_local ${DOTFILES}/git/gitconfig_local
 ## gitignore_global
 if [ -f "${HOME}/.gitignore_global" ]; then
-    mv ${HOME}/.gitignore_global ${date_ramdom}/gitignore_global
+    mv ${HOME}/.gitignore_global ${BACKUP_FOLDER}/gitignore_global
 fi
-ln -s ${CURRENT}/git/gitignore_global ${HOME}/.gitignore_global
+ln -s ${DOTFILES}/git/gitignore_global ${HOME}/.gitignore_global
 ## fish_config
 if [ -f "${HOME}/.config/fish/config.fish" ]; then
-    mv ${HOME}/.config/fish/config.fish ${date_ramdom}/config.fish
+    mv ${HOME}/.config/fish/config.fish ${BACKUP_FOLDER}/config.fish
 fi
-ln -s ${CURRENT}/fish/config.fish ${HOME}/.config/fish/config.fish
+ln -s ${DOTFILES}/fish/config.fish ${HOME}/.config/fish/config.fish
 ## vscodium
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
     if [ -f "${HOME}/Library/Application Support/VSCodium/User/settings.json" ]; then
         mv "${HOME}/Library/Application Support/VSCodium/User/settings.json" \
-            ${date_ramdom}/codium_config.json
+            ${BACKUP_FOLDER}/codium_config.json
     fi
-    ln -s ${CURRENT}/vscodium/settings.json \
+    ln -s ${DOTFILES}/vscodium/settings.json \
         "${HOME}/Library/Application Support/VSCodium/User/settings.json"
 elif [ "$OS" = "Linux" ]; then
     if [ -f "${HOME}/.config/VSCodium/User/settings.json" ]; then
         mv "${HOME}/.config/VSCodium/User/settings.json" \
-            ${date_ramdom}/codium_config.json
+            ${BACKUP_FOLDER}/codium_config.json
     fi
-    ln -s ${CURRENT}/vscodium/settings.json \
+    ln -s ${DOTFILES}/vscodium/settings.json \
         "${HOME}/.config/VSCodium/User/settings.json"
 else
     echo "Unsupported OS: $OS"
@@ -103,6 +104,6 @@ extensionID=(
     "vscode-icons-team.vscode-icons"
     "tomoki1207.pdf"
 )
-for extID in "${extensionID[@]}"; do
-    codium --install-extension "${extID}"
+for extID in ${extensionID[@]}; do
+    codium --install-extension ${extID}
 done
