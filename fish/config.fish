@@ -9,7 +9,6 @@ end
 switch (uname)
     case "Darwin"  # macOS
         # homebrew
-        # if use x64: https://blog.mksc.jp/contents/apple-silicon/
         eval (/opt/homebrew/bin/brew shellenv)
 
         # Java
