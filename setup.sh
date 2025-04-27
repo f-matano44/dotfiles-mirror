@@ -7,9 +7,19 @@ DOTFILES=`pwd`
 # make backup folder
 TIMESTAMP=$(date +%Y%m%dT%H%M%S)
 RANDOM_ID=$(printf "%08d" $(fish -c "random 0 99999999"))
-BACKUP_FOLDER=${DOTFILES}/.old/${TIMESTAMP}_${RANDOM_ID}
+BACKUP_FOLDER=${DOTFILES}/.backup/${TIMESTAMP}_${RANDOM_ID}
 mkdir -p ${BACKUP_FOLDER}
-mv ${DOTFILES}/old_* ${DOTFILES}/.old/
+
+
+# merge old backup folder
+shopt -s nullglob
+old_dirs=( ${DOTFILES}/old_*/ ${DOTFILES}/.old/*/ )
+if (( ${#old_dirs[@]})); then
+    mv -- ${old_dirs[@]} ${DOTFILES}/.backup/
+fi
+if [ -d ${DOTFILES}/.old ]; then
+    rmdir ${DOTFILES}/.old
+fi
 
 
 # make dir

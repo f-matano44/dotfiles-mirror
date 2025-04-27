@@ -1,5 +1,5 @@
 vim/.netrwhist
 *.class
 .swp
-*old*
+.backup
 gitconfig_local
