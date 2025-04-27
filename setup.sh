@@ -9,10 +9,10 @@ TIMESTAMP=$(date +%Y%m%dT%H%M%S)
 RANDOM_ID=$(printf "%08d" $(fish -c "random 0 99999999"))
 BACKUP_FOLDER=${DOTFILES}/.old/${TIMESTAMP}_${RANDOM_ID}
 mkdir -p ${BACKUP_FOLDER}
+mv ${DOTFILES}/old_* ${DOTFILES}/.old/
 
 
 # make dir
-
 if [ ! -d ${HOME}/.vim/colors/ ]; then
     mkdir -p ${HOME}/.vim/colors/
 fi
