@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-DOTFILES=`pwd`
+DOTFILES=$(pwd)
 
 # make backup folder
 TIMESTAMP=$(date +%Y%m%dT%H%M%S)
