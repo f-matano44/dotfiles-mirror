@@ -21,7 +21,7 @@ MIT License (c) 2025 f-matano44
 
 ```sh
 git clone https://gitlab.com/f-matano44/dotfiles.git
-cd ./dotfiles/ && bash ./setup.sh
+cd ./dotfiles/ && bash ./setup.bash
 ```
 
 
