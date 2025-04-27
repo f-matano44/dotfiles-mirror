@@ -5,7 +5,7 @@ I use this on mint & Ubuntu & macOS.
 
 ## License
 
-MIT License (c) 2025 f-matano44
+MIT License
 
 
 ## My environment
@@ -39,3 +39,4 @@ cd ./dotfiles/ && bash ./setup.bash
 ## Reference(s)
 
 * [\[株式会社エムケイシステム TECH BLOG M1 Mac の環境構築メモ\]](https://blog.mksc.jp/contents/apple-silicon/)
+* [\[fishで「パスを通す」ための最終解答\]](https://zenn.dev/estra/articles/zenn-fish-add-path-final-answer)

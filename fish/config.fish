@@ -1,6 +1,3 @@
-# 困ったときのメモ
-# https://zenn.dev/estra/articles/zenn-fish-add-path-final-answer
-
 # Commands to run in interactive sessions can go here
 if status is-interactive
 
