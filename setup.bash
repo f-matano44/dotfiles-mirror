@@ -12,7 +12,7 @@ mkdir -p ${BACKUP_FOLDER}
 
 
 # merge old backup folder
-shopt -s nullglob
+shopt -s nullglob dotglob
 old_dirs=( ${DOTFILES}/old_*/ ${DOTFILES}/.old/*/ )
 if (( ${#old_dirs[@]})); then
     mv -- ${old_dirs[@]} ${DOTFILES}/.backup/
