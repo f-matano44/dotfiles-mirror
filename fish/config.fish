@@ -22,18 +22,12 @@ if status is-interactive
             # MATLAB
             # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
 
-            # Ruby
-            fish_add_path $HOME/.rbenv/bin
-            if type -q rbenv
-                rbenv init - | source
-            end
-
             # coreutils
             # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
         case "Linux"
             # pyenv
-            set -Ux PYENV_ROOT $HOME/.pyenv
+            set -gx PYENV_ROOT $HOME/.pyenv
             fish_add_path $PYENV_ROOT/bin
 
             # gradle
@@ -50,25 +44,28 @@ if status is-interactive
 
             # amdgpu
             fish_add_path /opt/rocm-6.3.4/bin
-
-            # doas
-            if type -q doas
-                alias sudo doas
-            end
     end
 
-    # pyenv
+    # Ruby
+    if type -q rbenv
+        rbenv init - fish | source
+    end
+
+    # Python
     if type -q pyenv
         pyenv init - fish | source
         pyenv global 3.11
     end
 
-    # other alias
+    # alias
     alias halt 'shutdown -h now'
     alias reboot 'shutdown -r now'
     alias えぃｔ 'exit'
     alias targz 'tar -zcvf'    # targz filename.tar.gz dirname
     alias untargz 'tar -zxvf'  # untargz filename.tar.gz
+    if type -q doas
+        alias sudo doas
+    end
 
     # atcoder
     alias atc_java "mkdir a b c d && \
