@@ -37,10 +37,13 @@
         "nnmnkwii",
         "noisereduce",
         "omegaconf",
+        "PYPI",
+        "pyproject",
         "Qiita",
         "quantile",
         "rfft",
         "rfftfreq",
+        "setuptools",
         "sosfilt",
         "soundfile",
         "soxr",
@@ -100,7 +103,5 @@
     "gitlens.codeLens.enabled": false,
     "terminal.integrated.defaultProfile.linux": "fish",
     "python.condaPath": "~/.miniforge3/condabin/conda",
-    "terminal.integrated.inheritEnv": false,
-    "python.terminal.activateEnvironment": false,
-    "chat.commandCenter.enabled": false
+    "terminal.integrated.inheritEnv": false
 }
