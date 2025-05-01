@@ -1,9 +1,10 @@
 # Commands to run in interactive sessions can go here
 if status is-interactive
 
-    set LAST_LOGIN (last -n 10 (whoami) | awk '!($3 == "login" && $4 == "screen")' | \
-                    head -n 2 | tail -n 1 | \
-                    awk '{ print $4, $5, $6, $7 }')
+    set LAST_LOGIN (last -n 10 (whoami) | \
+                    awk '!($3 == "login" && $4 == "screen")' | \
+                    awk '$8 != "gone" && $8 != "still"' | \
+                    head -n 1 | awk '{ print $4, $5, $6, $7 }')
     set fish_greeting (test (uname) = "Darwin";
         and echo "";  # for MacOS
         or echo "Last login: $LAST_LOGIN"  # for Linux
