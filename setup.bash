@@ -60,6 +60,11 @@ if [ -f "${HOME}/.config/fish/config.fish" ]; then
     mv ${HOME}/.config/fish/config.fish ${BACKUP_FOLDER}/config.fish
 fi
 ln -s ${DOTFILES}/fish/config.fish ${HOME}/.config/fish/config.fish
+## xmodmap
+if [ -f "${HOME}/.xmodmap" ]; then
+    mv ${HOME}/.xmodmap ${BACKUP_FOLDER}/xmodmap
+fi
+ln -s ${DOTFILES}/xmodmap/xmodmap ${HOME}/.xmodmap
 ## vscodium
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
