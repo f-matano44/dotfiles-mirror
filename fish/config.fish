@@ -48,17 +48,6 @@ if status is-interactive
             fish_add_path /opt/rocm-6.3.4/bin
     end
 
-    # Ruby
-    if type -q rbenv
-        rbenv init - fish | source
-    end
-
-    # Python
-    if type -q pyenv
-        pyenv init - fish | source
-        pyenv global 3.11
-    end
-
     # alias
     alias halt 'shutdown -h now'
     alias reboot 'shutdown -r now'
@@ -75,4 +64,16 @@ if status is-interactive
         cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
         cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
         cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
+end
+
+
+# Ruby
+if type -q rbenv
+    rbenv init - fish | source
+end
+
+# Python
+if type -q pyenv
+    pyenv init - fish | source
+    pyenv global 3.11
 end
