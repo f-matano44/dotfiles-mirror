@@ -1,11 +1,8 @@
 # dotfiles
 
-I use this on mint & Ubuntu & macOS.
-
-
-## License
-
-MIT License
+* I use this on mint & Ubuntu & macOS.
+* The setup script was checked with [\[ShellCheck\]](https://open-vsx.org/extension/timonwong/shellcheck).
+* License: **MIT**
 
 
 ## My environment
@@ -20,8 +17,9 @@ MIT License
 ## How to setup
 
 ```sh
+cd "$HOME"
 git clone https://gitlab.com/f-matano44/dotfiles.git
-cd ./dotfiles/ && bash ./setup.bash
+cd dotfiles/ && bash setup.bash
 ```
 
 
