@@ -30,6 +30,7 @@
         "MONOPHONE",
         "Morise",
         "mreccorpus",
+        "mypy",
         "nbit",
         "nbits",
         "ndarray",
@@ -105,5 +106,7 @@
     "gitlens.codeLens.enabled": false,
     "terminal.integrated.defaultProfile.linux": "fish",
     "python.condaPath": "~/.miniforge3/condabin/conda",
-    "terminal.integrated.inheritEnv": false
+    "terminal.integrated.inheritEnv": false,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
 }
