@@ -9,6 +9,7 @@
         "bandpass",
         "btype",
         "cheby",
+        "checkstyle",
         "Cliping",
         "CPPFLAGS",
         "cuda",
@@ -56,6 +57,7 @@
         "ttslearn",
         "unsqueeze",
         "utternace",
+        "venv",
         "vsed",
         "xfce"
     ],
