@@ -46,6 +46,10 @@ if status is-interactive
 
             # amdgpu
             fish_add_path /opt/rocm-6.3.4/bin
+
+            # Swift
+            fish_add_path ~/.local/share/swiftly
+            fish_add_path ~/.local/share/swiftly/bin
     end
 
     # alias
@@ -75,5 +79,5 @@ end
 # Python
 if type -q pyenv
     pyenv init - fish | source
-    pyenv global 3.11
+    pyenv global 3.13
 end
