@@ -104,6 +104,7 @@
     "workbench.productIconTheme": "bongocat",
     "gitlens.codeLens.enabled": false,
     "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.inheritEnv": false,
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "editor.formatOnSave": true
