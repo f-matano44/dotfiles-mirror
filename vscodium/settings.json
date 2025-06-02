@@ -106,6 +106,5 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.inheritEnv": false,
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
-    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
 }
