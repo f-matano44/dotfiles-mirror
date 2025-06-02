@@ -76,7 +76,6 @@
     "editor.detectIndentation": false,
     "javascript.inlayHints.variableTypes.enabled": true,
     "extensions.supportUntrustedWorkspaces": {},
-    "MATLAB.installPath": "/Applications/MATLAB_R2023b.app",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
     "editor.fontWeight": "bold",
@@ -91,9 +90,6 @@
     "redhat.telemetry.enabled": true,
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "editor.unicodeHighlight.nonBasicASCII": true,
-    "terminal.integrated.commandsToSkipShell": [
-        "matlab.interrupt"
-    ],
     "csv-edit.readOption_hasHeader": "true",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
