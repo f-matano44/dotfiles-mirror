@@ -95,7 +95,6 @@
         "matlab.interrupt"
     ],
     "csv-edit.readOption_hasHeader": "true",
-    "python.pipenvPath": "",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "mypy-type-checker.showNotifications": "onError",
@@ -105,7 +104,6 @@
     "workbench.productIconTheme": "bongocat",
     "gitlens.codeLens.enabled": false,
     "terminal.integrated.defaultProfile.linux": "fish",
-    "python.condaPath": "~/.miniforge3/condabin/conda",
     "terminal.integrated.inheritEnv": false,
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
