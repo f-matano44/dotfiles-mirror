@@ -105,5 +105,6 @@
     "gitlens.codeLens.enabled": false,
     "terminal.integrated.defaultProfile.linux": "fish",
     "python.condaPath": "~/.miniforge3/condabin/conda",
-    "terminal.integrated.inheritEnv": false
+    "terminal.integrated.inheritEnv": false,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv"
 }
