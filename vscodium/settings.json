@@ -67,7 +67,6 @@
     "editor.formatOnSave": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.stickyScroll.enabled": true,
-    "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.unicodeHighlight.nonBasicASCII": true,
     "extensions.supportUntrustedWorkspaces": {},
     "files.associations": {
