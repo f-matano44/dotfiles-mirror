@@ -1,7 +1,4 @@
 {
-    "[python]": {
-        "editor.formatOnType": true
-    },
     "cSpell.customDictionaries": {},
     "cSpell.userWords": [
         "astype",
@@ -85,7 +82,6 @@
     "git.replaceTagsWhenPull": true,
     "gitlens.codeLens.enabled": false,
     "java.checkstyle.configuration": "google_checks.xml",
-    "javascript.inlayHints.variableTypes.enabled": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "mypy-type-checker.showNotifications": "onError",
