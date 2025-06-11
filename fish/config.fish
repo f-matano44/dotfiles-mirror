@@ -10,9 +10,8 @@ if status is-interactive
         or echo "Last login: $LAST_LOGIN"  # for Linux
     )
 
-
     switch (uname)
-        case "Darwin"  # macOS
+        case Darwin # macOS
             # homebrew
             eval (/opt/homebrew/bin/brew shellenv)
 
@@ -27,7 +26,7 @@ if status is-interactive
             # coreutils
             # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
-        case "Linux"
+        case Linux
             # pyenv
             set -gx PYENV_ROOT $HOME/.pyenv
             fish_add_path $PYENV_ROOT/bin
@@ -55,9 +54,9 @@ if status is-interactive
     # alias
     alias halt 'shutdown -h now'
     alias reboot 'shutdown -r now'
-    alias えぃｔ 'exit'
-    alias targz 'tar -zcvf'    # targz filename.tar.gz dirname
-    alias untargz 'tar -zxvf'  # untargz filename.tar.gz
+    alias えぃｔ exit
+    alias targz 'tar -zcvf' # targz filename.tar.gz dirname
+    alias untargz 'tar -zxvf' # untargz filename.tar.gz
     if type -q doas
         alias sudo doas
     end
@@ -70,10 +69,10 @@ if status is-interactive
         cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
 end
 
-
 # Ruby
 if type -q rbenv
     rbenv init - fish | source
+    rbenv global jruby-9.4.9.0
 end
 
 # Python
