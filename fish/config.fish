@@ -72,7 +72,7 @@ end
 # Ruby
 if type -q rbenv
     rbenv init - fish | source
-    rbenv global jruby-10.0.0.0
+    rbenv global 3.4.3
 end
 
 # Python
