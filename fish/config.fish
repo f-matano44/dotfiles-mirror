@@ -41,12 +41,6 @@ switch (uname)
         set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
         set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
 
-        # MATLAB
-        # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
-
-        # coreutils
-        # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
-
     case Linux
         # pyenv
         set -gx PYENV_ROOT $HOME/.pyenv
