@@ -9,6 +9,20 @@ if status is-interactive
         and echo "";  # for MacOS
         or echo "Last login: $LAST_LOGIN"  # for Linux
     )
+
+    # alias
+    alias halt 'shutdown -h now'
+    alias reboot 'shutdown -r now'
+    alias えぃｔ exit
+    alias targz 'tar -zcvf' # targz filename.tar.gz dirname
+    alias untargz 'tar -zxvf' # untargz filename.tar.gz
+
+    # atcoder
+    alias atc_java "mkdir a b c d && \
+        cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
+        cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
+        cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
+        cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
 end
 
 switch (uname)
@@ -57,20 +71,6 @@ switch (uname)
         fish_add_path ~/.local/share/swiftly
         fish_add_path ~/.local/share/swiftly/bin
 end
-
-# alias
-alias halt 'shutdown -h now'
-alias reboot 'shutdown -r now'
-alias えぃｔ exit
-alias targz 'tar -zcvf' # targz filename.tar.gz dirname
-alias untargz 'tar -zxvf' # untargz filename.tar.gz
-
-# atcoder
-alias atc_java "mkdir a b c d && \
-    cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
-    cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
-    cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
-    cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
 
 # Python
 if type -q pyenv
