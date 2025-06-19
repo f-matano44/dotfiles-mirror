@@ -64,9 +64,6 @@ alias reboot 'shutdown -r now'
 alias えぃｔ exit
 alias targz 'tar -zcvf' # targz filename.tar.gz dirname
 alias untargz 'tar -zxvf' # untargz filename.tar.gz
-if type -q doas
-    alias sudo doas
-end
 
 # atcoder
 alias atc_java "mkdir a b c d && \
