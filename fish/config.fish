@@ -49,10 +49,6 @@ switch (uname)
         # gradle
         fish_add_path ~/.local/bin/gradle/bin/
 
-        # wine
-        # WINEARCH=win32 wineboot
-        # winetricks --self-update
-
         # hugo (skip if installed via snap)
         if not type -q hugo
             fish_add_path ~/.local/bin/hugo

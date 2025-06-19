@@ -22,6 +22,13 @@ git clone https://gitlab.com/f-matano44/dotfiles.git
 cd dotfiles/ && bash setup.bash
 ```
 
+## How to setup WINE
+
+```sh
+WINEARCH=win32 wineboot
+winetricks --self-update
+```
+
 
 ## 3rd party notice
 
