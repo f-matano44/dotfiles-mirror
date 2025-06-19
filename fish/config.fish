@@ -20,6 +20,12 @@ if status is-interactive
             fish_add_path $JAVA_HOME/bin
             set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
+            # Ruby
+            fish_add_path /opt/homebrew/opt/ruby/bin
+            set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
+            set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
+            set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
+
             # MATLAB
             # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
 
@@ -67,12 +73,6 @@ if status is-interactive
         cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
         cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
         cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
-end
-
-# Ruby
-if type -q rbenv
-    rbenv init - fish | source
-    rbenv global 3.4.3
 end
 
 # Python
