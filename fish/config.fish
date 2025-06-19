@@ -9,71 +9,71 @@ if status is-interactive
         and echo "";  # for MacOS
         or echo "Last login: $LAST_LOGIN"  # for Linux
     )
-
-    switch (uname)
-        case Darwin # macOS
-            # homebrew
-            eval (/opt/homebrew/bin/brew shellenv)
-
-            # Java
-            set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
-            fish_add_path $JAVA_HOME/bin
-            set -gx CPPFLAGS "-I$JAVA_HOME/include"
-
-            # Ruby
-            fish_add_path /opt/homebrew/opt/ruby/bin
-            set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
-            set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
-            set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
-
-            # MATLAB
-            # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
-
-            # coreutils
-            # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
-
-        case Linux
-            # pyenv
-            set -gx PYENV_ROOT $HOME/.pyenv
-            fish_add_path $PYENV_ROOT/bin
-
-            # gradle
-            fish_add_path ~/.local/bin/gradle/bin/
-
-            # wine
-            # WINEARCH=win32 wineboot
-            # winetricks --self-update
-
-            # hugo (skip if installed via snap)
-            if not type -q hugo
-                fish_add_path ~/.local/bin/hugo
-            end
-
-            # amdgpu
-            fish_add_path /opt/rocm-6.3.4/bin
-
-            # Swift
-            fish_add_path ~/.local/share/swiftly
-            fish_add_path ~/.local/share/swiftly/bin
-    end
-
-    # alias
-    alias halt 'shutdown -h now'
-    alias reboot 'shutdown -r now'
-    alias えぃｔ exit
-    alias targz 'tar -zcvf' # targz filename.tar.gz dirname
-    alias untargz 'tar -zxvf' # untargz filename.tar.gz
-    if type -q doas
-        alias sudo doas
-    end
-
-    # atcoder
-    alias atc_java "mkdir a b c d && \
-        cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
 end
+
+switch (uname)
+    case Darwin # macOS
+        # homebrew
+        eval (/opt/homebrew/bin/brew shellenv)
+
+        # Java
+        set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
+        fish_add_path $JAVA_HOME/bin
+        set -gx CPPFLAGS "-I$JAVA_HOME/include"
+
+        # Ruby
+        fish_add_path /opt/homebrew/opt/ruby/bin
+        set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
+        set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
+        set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
+
+        # MATLAB
+        # alias matlab-cli '/Applications/MATLAB_R2023b.app/bin/matlab -nodesktop'
+
+        # coreutils
+        # fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
+
+    case Linux
+        # pyenv
+        set -gx PYENV_ROOT $HOME/.pyenv
+        fish_add_path $PYENV_ROOT/bin
+
+        # gradle
+        fish_add_path ~/.local/bin/gradle/bin/
+
+        # wine
+        # WINEARCH=win32 wineboot
+        # winetricks --self-update
+
+        # hugo (skip if installed via snap)
+        if not type -q hugo
+            fish_add_path ~/.local/bin/hugo
+        end
+
+        # amdgpu
+        fish_add_path /opt/rocm-6.3.4/bin
+
+        # Swift
+        fish_add_path ~/.local/share/swiftly
+        fish_add_path ~/.local/share/swiftly/bin
+end
+
+# alias
+alias halt 'shutdown -h now'
+alias reboot 'shutdown -r now'
+alias えぃｔ exit
+alias targz 'tar -zcvf' # targz filename.tar.gz dirname
+alias untargz 'tar -zxvf' # untargz filename.tar.gz
+if type -q doas
+    alias sudo doas
+end
+
+# atcoder
+alias atc_java "mkdir a b c d && \
+    cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
+    cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
+    cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
+    cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
 
 # Python
 if type -q pyenv
