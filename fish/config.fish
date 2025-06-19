@@ -18,11 +18,11 @@ if status is-interactive
     alias untargz 'tar -zxvf' # untargz filename.tar.gz
 
     # atcoder
-    alias atc_java "mkdir a b c d && \
+    alias atc_java 'mkdir a b c d && \
         cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
         cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
         cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./d/Main.java"
+        cp ~/dotfiles/atcoder/Main.java ./d/Main.java'
 end
 
 switch (uname)
@@ -32,7 +32,7 @@ switch (uname)
 
         # Java
         set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
-        fish_add_path $JAVA_HOME/bin
+        fish_add_path "$JAVA_HOME/bin"
         set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
         # Ruby
@@ -43,8 +43,8 @@ switch (uname)
 
     case Linux
         # pyenv
-        set -gx PYENV_ROOT $HOME/.pyenv
-        fish_add_path $PYENV_ROOT/bin
+        set -gx PYENV_ROOT "$HOME/.pyenv"
+        fish_add_path "$PYENV_ROOT/bin"
 
         # gradle
         fish_add_path ~/.local/bin/gradle/bin/
