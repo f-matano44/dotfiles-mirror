@@ -1,0 +1,2 @@
+自動起動するアプリケーションに以下を追加
+sh -c "sleep 10 && xmodmap ~/.xmodmap"
