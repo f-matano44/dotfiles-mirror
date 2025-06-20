@@ -7,11 +7,10 @@
 
 ## My environment
 
-* Shell: fish
+* Shell: fish 4.x
 * Editor: vscodium
-* Java : version 21
+* Java (macOS): version 21
 * Python manager: pyenv
-* Ruby manager: rbenv
 
 
 ## How to setup
