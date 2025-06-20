@@ -66,5 +66,5 @@ end
 # Python
 if type -q pyenv
     pyenv init - fish | source
-    pyenv global 3.13
+    pyenv global 3 # latest version
 end
