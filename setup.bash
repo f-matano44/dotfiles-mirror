@@ -32,16 +32,14 @@ fi
 
 
 # create symbolic link
-## lucario
+## vim
 if [ -f "$HOME"/.vim/colors/lucario.vim ]; then
     mv "$HOME"/.vim/colors/lucario.vim "$BACKUP_FOLDER"/lucario.vim
 fi
-ln -s "$DOTFILES"/vim/lucario.vim "$HOME"/.vim/colors/lucario.vim
-## vimrc
 if [ -f "$HOME"/.vimrc ]; then
     mv "$HOME"/.vimrc "$BACKUP_FOLDER"/vimrc
 fi
-ln -s "$DOTFILES"/vim/vimrc "$HOME"/.vimrc
+stow vim
 ## gitconfig
 if [ -f "$HOME"/.gitconfig ]; then
     mv "$HOME"/.gitconfig "$BACKUP_FOLDER"/gitconfig
