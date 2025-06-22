@@ -28,6 +28,19 @@ WINEARCH=win32 wineboot
 winetricks --self-update
 ```
 
+## How to setup xmodmap
+
+* Add below command to "Startup Applications"
+
+```sh
+sh -c "sleep 10 && xmodmap ~/.xmodmap"
+```
+
+* default value of Ubuntu 24.04
+
+```
+keycode 108 = Alt_R Meta_R Alt_R Meta_R
+```
 
 ## 3rd party notice
 

@@ -64,7 +64,7 @@ stow fish
 if [ -f "$HOME"/.xmodmap ]; then
     mv "$HOME"/.xmodmap "$BACKUP_FOLDER"/xmodmap
 fi
-ln -s "$DOTFILES"/xmodmap/xmodmap "$HOME"/.xmodmap
+stow xmodmap
 ## vscodium
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
