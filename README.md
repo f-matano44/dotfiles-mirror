@@ -15,6 +15,8 @@
 
 ## How to setup
 
+* setup script depends GNU stow.
+
 ```sh
 cd "$HOME"
 git clone https://gitlab.com/f-matano44/dotfiles.git
