@@ -8,5 +8,5 @@ lint:
   stage: lint
   script:
     - apk add stow
-    - shellcheck setup.bash
-    - stow -nv fish vim xmodmap
+    - shellcheck setup_codium.bash
+    - stow -nv fish git vim xmodmap

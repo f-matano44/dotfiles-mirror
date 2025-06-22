@@ -15,12 +15,19 @@
 
 ## How to setup
 
-* setup script depends GNU stow.
+* Set dotfiles by GNU stow.
 
 ```sh
-cd "$HOME"
 git clone https://gitlab.com/f-matano44/dotfiles.git
-cd dotfiles/ && bash setup.bash
+cd dotfiles/
+stow fish git vim xmodmap
+```
+
+* Set gitconfig_local (for gpg signing)
+
+```sh
+touch "$HOME"/.gitconfig_local
+ln -s "$HOME"/.gitconfig_local path/to/dotfiles/git/.gitconfig_local
 ```
 
 ## How to setup WINE

@@ -2,68 +2,7 @@
 
 set -euo pipefail
 
-DOTFILES=$(pwd)
 
-# make backup folder
-TIMESTAMP=$(date +%Y%m%dT%H%M%S)
-RANDOM_ID=$(printf "%08d" "$(fish -c 'random 0 99999999')")
-BACKUP_FOLDER="$DOTFILES"/.backup/"$TIMESTAMP"_"$RANDOM_ID"
-mkdir -p "$BACKUP_FOLDER"
-
-
-# merge old backup folder
-shopt -s nullglob dotglob
-old_dirs=( "$DOTFILES"/old_*/ "$DOTFILES"/.old/*/ )
-if (( ${#old_dirs[@]})); then
-    mv -- "${old_dirs[@]}" "$DOTFILES"/.backup/
-fi
-if [ -d "$DOTFILES"/.old ]; then
-    rmdir "$DOTFILES"/.old
-fi
-
-
-# make dir
-if [ ! -d "$HOME"/.vim/colors/ ]; then
-    mkdir -p "$HOME"/.vim/colors/
-fi
-if [ ! -d "$HOME"/.config/fish/ ]; then
-    mkdir -p "$HOME"/.config/fish/
-fi
-
-
-# create symbolic link
-## vim
-if [ -f "$HOME"/.vim/colors/lucario.vim ]; then
-    mv "$HOME"/.vim/colors/lucario.vim "$BACKUP_FOLDER"/lucario.vim
-fi
-if [ -f "$HOME"/.vimrc ]; then
-    mv "$HOME"/.vimrc "$BACKUP_FOLDER"/vimrc
-fi
-stow vim
-## gitconfig
-if [ -f "$HOME"/.gitconfig ]; then
-    mv "$HOME"/.gitconfig "$BACKUP_FOLDER"/gitconfig
-fi
-ln -s "$DOTFILES"/git/gitconfig "$HOME"/.gitconfig
-## gitconfig_local (for gpg signing)
-touch "$HOME"/.gitconfig_local
-ln -sfn "$HOME"/.gitconfig_local "$DOTFILES"/git/gitconfig_local
-## gitignore_global
-if [ -f "$HOME"/.gitignore_global ]; then
-    mv "$HOME"/.gitignore_global "$BACKUP_FOLDER"/gitignore_global
-fi
-ln -s "$DOTFILES"/git/gitignore_global "$HOME"/.gitignore_global
-## fish_config
-if [ -f "$HOME"/.config/fish/config.fish ]; then
-    mv "$HOME"/.config/fish/config.fish "$BACKUP_FOLDER"/config.fish
-fi
-stow fish
-## xmodmap
-if [ -f "$HOME"/.xmodmap ]; then
-    mv "$HOME"/.xmodmap "$BACKUP_FOLDER"/xmodmap
-fi
-stow xmodmap
-## vscodium
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
     if [ -f "$HOME/Library/Application Support/VSCodium/User/settings.json" ]; then
