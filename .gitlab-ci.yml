@@ -9,4 +9,4 @@ lint:
   script:
     - apk add stow
     - shellcheck setup.bash
-    - stow fish vim xmodmap
+    - stow -nv fish vim xmodmap
