@@ -59,7 +59,7 @@ ln -s "$DOTFILES"/git/gitignore_global "$HOME"/.gitignore_global
 if [ -f "$HOME"/.config/fish/config.fish ]; then
     mv "$HOME"/.config/fish/config.fish "$BACKUP_FOLDER"/config.fish
 fi
-ln -s "$DOTFILES"/fish/config.fish "$HOME"/.config/fish/config.fish
+stow fish
 ## xmodmap
 if [ -f "$HOME"/.xmodmap ]; then
     mv "$HOME"/.xmodmap "$BACKUP_FOLDER"/xmodmap
