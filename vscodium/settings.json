@@ -1,5 +1,4 @@
 {
-    "cSpell.customDictionaries": {},
     "cSpell.userWords": [
         "astype",
         "bandpass",
@@ -68,13 +67,16 @@
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.stickyScroll.enabled": true,
     "editor.unicodeHighlight.nonBasicASCII": true,
-    "extensions.supportUntrustedWorkspaces": {},
     "files.associations": {
         "*.bash": "shellscript",
         "CHANGELOG": "plaintext"
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "flake8.severity": {
+        "E": "Warning",
+        "F": "Warning"
+    },
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "always",
@@ -83,9 +85,8 @@
     "java.checkstyle.configuration": "google_checks.xml",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    "mypy-type-checker.showNotifications": "onError",
+    "mypy-type-checker.showNotifications": "always",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
-    "redhat.telemetry.enabled": true,
     "svg.preview.mode": "img",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.defaultProfile.linux": "fish",
@@ -94,10 +95,6 @@
     "terminal.integrated.fontWeight": "bold",
     "terminal.integrated.inheritEnv": false,
     "vsicons.dontShowNewVersionMessage": true,
-    "workbench.editorAssociations": {
-        "*.lock": "default",
-        "*.mlapp": "default"
-    },
     "workbench.iconTheme": "vscode-icons",
     "workbench.productIconTheme": "bongocat",
     "workbench.startupEditor": "none"
