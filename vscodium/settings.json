@@ -35,6 +35,7 @@
         "noisereduce",
         "numpy",
         "omegaconf",
+        "pipx",
         "PYPI",
         "pyproject",
         "Qiita",
