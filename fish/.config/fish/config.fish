@@ -35,13 +35,6 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
-        # Ruby
-        fish_add_path /opt/homebrew/opt/ruby/bin
-        fish_add_path /opt/homebrew/lib/ruby/gems/3.4.0/bin
-        # set -gx LDFLAGS -L/opt/homebrew/opt/ruby/lib
-        # set -gx CPPFLAGS -I/opt/homebrew/opt/ruby/include
-        # set -gx PKG_CONFIG_PATH /opt/homebrew/opt/ruby/lib/pkgconfig
-
     case Linux
         # pyenv
         set -gx PYENV_ROOT "$HOME/.pyenv"
