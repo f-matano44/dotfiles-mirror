@@ -88,6 +88,7 @@
     "liveServer.settings.donotVerifyTags": true,
     "mypy-type-checker.showNotifications": "always",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "redhat.telemetry.enabled": true,
     "svg.preview.mode": "img",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.defaultProfile.linux": "fish",
