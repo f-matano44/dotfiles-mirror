@@ -43,11 +43,6 @@ switch (uname)
         # gradle
         fish_add_path ~/.local/bin/gradle/bin/
 
-        # hugo (skip if installed via snap)
-        if not type -q hugo
-            fish_add_path ~/.local/bin/hugo
-        end
-
         # amdgpu
         fish_add_path /opt/rocm-6.3.4/bin
 end
