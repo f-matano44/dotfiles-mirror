@@ -82,6 +82,7 @@
     "git.confirmSync": false,
     "git.openRepositoryInParentFolders": "always",
     "git.replaceTagsWhenPull": true,
+    "git.suggestSmartCommit": false,
     "gitlens.codeLens.enabled": false,
     "java.checkstyle.configuration": "google_checks.xml",
     "liveServer.settings.donotShowInfoMsg": true,
