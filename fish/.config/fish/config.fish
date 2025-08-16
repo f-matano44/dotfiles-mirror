@@ -29,6 +29,7 @@ switch (uname)
     case Darwin # macOS
         # homebrew
         eval (/opt/homebrew/bin/brew shellenv)
+        set -gx HOMEBREW_NO_ENV_HINTS 1
 
         # Java
         set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
