@@ -75,8 +75,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "flake8.severity": {
-        "E": "Warning",
-        "F": "Warning"
+        "E": "Warning"
     },
     "git.autofetch": true,
     "git.confirmSync": false,
