@@ -75,7 +75,8 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "flake8.severity": {
-        "E": "Warning"
+        "E": "Warning",
+        "F": "Warning"
     },
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -89,6 +90,7 @@
     "mypy-type-checker.showNotifications": "always",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "redhat.telemetry.enabled": true,
+    "ruff.enable": false,
     "svg.preview.mode": "img",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.defaultProfile.linux": "fish",
