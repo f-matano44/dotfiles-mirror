@@ -53,3 +53,6 @@ if type -q pyenv
     pyenv init - fish | source
     pyenv global 3.12 # for vscode
 end
+
+# Poetry
+set -gx POETRY_VIRTUALENVS_IN_PROJECT true
