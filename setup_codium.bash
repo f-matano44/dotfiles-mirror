@@ -2,6 +2,24 @@
 
 set -euo pipefail
 
+DOTFILES=$(pwd)
+
+# make backup folder
+TIMESTAMP=$(date +%Y%m%dT%H%M%S)
+RANDOM_ID=$(printf "%08d" "$(fish -c 'random 0 99999999')")
+BACKUP_FOLDER="$DOTFILES"/.backup/"$TIMESTAMP"_"$RANDOM_ID"
+mkdir -p "$BACKUP_FOLDER"
+
+
+# merge old backup folder
+shopt -s nullglob dotglob
+old_dirs=( "$DOTFILES"/old_*/ "$DOTFILES"/.old/*/ )
+if (( ${#old_dirs[@]})); then
+    mv -- "${old_dirs[@]}" "$DOTFILES"/.backup/
+fi
+if [ -d "$DOTFILES"/.old ]; then
+    rmdir "$DOTFILES"/.old
+fi
 
 OS=$(uname)
 if [ "$OS" = "Darwin" ]; then
