@@ -49,6 +49,7 @@ switch (uname)
 end
 
 # Python
+set -gx PIP_REQUIRE_VIRTUALENV true
 if type -q pyenv
     pyenv init - fish | source
     pyenv global 3.12 # for vscode
