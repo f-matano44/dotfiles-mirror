@@ -9,8 +9,8 @@
 
 * Shell: fish 4.x
 * Editor: vscodium
-* Java (macOS): version 21
-* Python manager: pyenv
+* Java (macOS): 21
+* Python manager: pyenv (+ Poetry)
 
 
 ## How to setup
