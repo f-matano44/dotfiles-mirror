@@ -29,7 +29,7 @@ switch (uname)
     case Darwin # macOS
         # homebrew
         eval (/opt/homebrew/bin/brew shellenv)
-        set -gx HOMEBREW_NO_ENV_HINTS true
+        set -gx HOMEBREW_NO_ENV_HINTS 1
 
         # Java
         set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
@@ -49,8 +49,8 @@ switch (uname)
 end
 
 # Python
-set -gx PIP_REQUIRE_VIRTUALENV true
-set -gx POETRY_VIRTUALENVS_IN_PROJECT true
+set -gx PIP_REQUIRE_VIRTUALENV 1
+set -gx POETRY_VIRTUALENVS_IN_PROJECT 1
 if type -q pyenv
     pyenv init - fish | source
     pyenv global 3.12 # for vscode
