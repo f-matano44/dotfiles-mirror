@@ -18,11 +18,11 @@ if status is-interactive
     alias untargz 'tar -zxvf' # untargz filename.tar.gz
 
     # atcoder
-    alias atc_java 'mkdir a b c d && \
-        cp ~/dotfiles/atcoder/Main.java ./a/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./b/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./c/Main.java && \
-        cp ~/dotfiles/atcoder/Main.java ./d/Main.java'
+    alias atc_java "mkdir a b c d && \
+        cp $HOME/dotfiles/atcoder/Main.java ./a/Main.java && \
+        cp $HOME/dotfiles/atcoder/Main.java ./b/Main.java && \
+        cp $HOME/dotfiles/atcoder/Main.java ./c/Main.java && \
+        cp $HOME/dotfiles/atcoder/Main.java ./d/Main.java"
 end
 
 switch (uname)
@@ -42,10 +42,10 @@ switch (uname)
         fish_add_path "$PYENV_ROOT/bin"
 
         # gradle
-        fish_add_path ~/.local/bin/gradle/bin/
+        fish_add_path "$HOME/.local/bin/gradle/bin/"
 
         # amdgpu
-        fish_add_path /opt/rocm-6.3.4/bin
+        fish_add_path "/opt/rocm-6.3.4/bin"
 end
 
 # Python
