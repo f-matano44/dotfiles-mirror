@@ -32,7 +32,7 @@ switch (uname)
         set -gx HOMEBREW_NO_ENV_HINTS 1
 
         # Java
-        set -gx JAVA_HOME (/usr/libexec/java_home -v "21")
+        set -gx JAVA_HOME "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
