@@ -90,6 +90,7 @@
     "liveServer.settings.donotVerifyTags": true,
     "mypy-type-checker.showNotifications": "always",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "python.languageServer": "Jedi",
     "redhat.telemetry.enabled": true,
     "ruff.enable": false,
     "svg.preview.mode": "img",
