@@ -55,3 +55,6 @@ if type -q pyenv
     pyenv init - fish | source
     pyenv global 3.12 # for vscode
 end
+
+# pipx etc.
+fish_add_path "$HOME/.local/bin"
