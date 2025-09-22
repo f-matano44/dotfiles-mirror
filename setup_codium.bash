@@ -43,6 +43,7 @@ fi
 
 # install codium extension
 extensionID=(
+    "bungcip.better-toml"
     "ms-python.black-formatter"
     "pixl-garden.BongoCat"
     # "shengchen.vscode-checkstyle"
@@ -64,12 +65,17 @@ extensionID=(
     "ms-toolsai.vscode-jupyter-slideshow"
     "redhat.java"
     "ritwickdey.LiveServer"
+    "MathWorks.language-matlab"
     "ms-python.mypy-type-checker"
+    "ionutvmi.path-autocomplete"
     "OrhunUlusahin.praatvscode"
     "ms-python.python"
     "ms-python.debugpy"
     "mechatroner.rainbow-csv"
     "redhat.fabric8-analytics"
+    "charliermarsh.ruff"
+    "timonwong.shellcheck"
+    "richie5um2.vscode-sort-json"
     "jock.svg"
     "vscode-icons-team.vscode-icons"
     "tomoki1207.pdf"
