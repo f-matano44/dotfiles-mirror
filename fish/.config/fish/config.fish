@@ -26,7 +26,7 @@ if status is-interactive
 end
 
 switch (uname)
-    case Darwin # macOS
+    case Darwin
         # homebrew
         eval (/opt/homebrew/bin/brew shellenv)
         set -gx HOMEBREW_NO_ENV_HINTS 1
