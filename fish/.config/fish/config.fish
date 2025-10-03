@@ -51,10 +51,10 @@ end
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx POETRY_VIRTUALENVS_IN_PROJECT 1
-set -gx PYTHONWARNINGS ignore # Warning はどうしようもないことが多い，ヤバかったら直ぐ消す
+set -gx PYTHONWARNINGS ignore # Warning はどうしようもないことが多いから無視無視，ヤバかったら直ぐ消す
 if type -q pyenv
     pyenv init - fish | source
-    pyenv global 3.12 # for vscode
+    pyenv global 3.13
 end
 
 # pipx etc.
