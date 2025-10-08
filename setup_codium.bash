@@ -65,7 +65,7 @@ extensionID=(
     "ms-toolsai.vscode-jupyter-slideshow"
     "redhat.java"
     "ritwickdey.LiveServer"
-    "MathWorks.language-matlab"
+    # "MathWorks.language-matlab"
     "ms-python.mypy-type-checker"
     "ionutvmi.path-autocomplete"
     "OrhunUlusahin.praatvscode"
