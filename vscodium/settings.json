@@ -67,6 +67,7 @@
     "editor.fontWeight": "bold",
     "editor.formatOnSave": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.semanticHighlighting.enabled": false,
     "editor.stickyScroll.enabled": true,
     "editor.unicodeHighlight.nonBasicASCII": true,
     "files.associations": {
