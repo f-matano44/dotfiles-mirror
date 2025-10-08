@@ -43,7 +43,6 @@ fi
 
 # install codium extension
 extensionID=(
-    "bungcip.better-toml"
     "ms-python.black-formatter"
     "pixl-garden.BongoCat"
     # "shengchen.vscode-checkstyle"
