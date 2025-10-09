@@ -78,6 +78,7 @@ extensionID=(
     "jock.svg"
     "vscode-icons-team.vscode-icons"
     "tomoki1207.pdf"
+    "redhat.vscode-yaml"
 )
 for extID in "${extensionID[@]}"; do
     codium --install-extension "$extID"
