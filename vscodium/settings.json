@@ -15,7 +15,10 @@
         "finfo",
         "firwin",
         "Fumiyoshi",
+        "filtfilt",
+        "freqs",
         "irfft",
+        "isort",
         "jfloatwavio",
         "Koguchi",
         "lfilter",
@@ -55,8 +58,10 @@
         "utternace",
         "venv",
         "VIRTUALENV",
-        "vsed",
-        "xfce"
+        "xfce",
+        "xlabel",
+        "ylabel",
+        "ylim"
     ],
     "csv-edit.readOption_hasHeader": "true",
     "diffEditor.ignoreTrimWhitespace": false,
