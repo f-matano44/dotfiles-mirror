@@ -8,9 +8,8 @@
 ## My environment
 
 * Shell: fish 4.x
-* Editor: vscodium
-* Java (macOS): 21
-* Python manager: pyenv (+ Poetry)
+* Editor: VSCodium
+* Python manager: pyenv (+ poetry, uv)
 
 
 ## How to setup
