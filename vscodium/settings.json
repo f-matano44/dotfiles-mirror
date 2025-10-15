@@ -111,7 +111,7 @@
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
-    "terminal.integrated.inheritEnv": false,
+    // "terminal.integrated.inheritEnv": false,
     "terminal.integrated.profiles.osx": {
         "fish": {
             "path": "/opt/homebrew/bin/fish"
