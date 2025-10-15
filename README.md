@@ -60,6 +60,10 @@ keycode 108 = Alt_R Meta_R Alt_R Meta_R
     * LICENSE: Qiita 利用規約 第二章 第７条 3
     * vim/vimrc
 
+* <https://github.com/github/gitignore>
+    * LICENSE: CC0
+    * git/.gitignore_global
+
 
 ## Reference(s)
 

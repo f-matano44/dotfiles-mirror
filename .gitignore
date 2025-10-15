@@ -3,3 +3,4 @@ vim/.netrwhist
 .swp
 .backup
 .gitconfig_local
+.mypy_cache
