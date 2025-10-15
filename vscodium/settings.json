@@ -1,4 +1,5 @@
 {
+    "chat.disableAIFeatures": true,
     "cSpell.userWords": [
         "astype",
         "bandpass",
