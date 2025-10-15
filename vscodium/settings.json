@@ -102,6 +102,7 @@
     "mypy-type-checker.showNotifications": "always",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.languageServer": "Jedi",
+    "python.terminal.activateEnvironment": false,
     "redhat.telemetry.enabled": true,
     "ruff.enable": false,
     "svg.preview.mode": "img",
