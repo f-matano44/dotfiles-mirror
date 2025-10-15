@@ -121,6 +121,8 @@
     "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.iconTheme": "vscode-icons",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
     "workbench.productIconTheme": "bongocat",
     "workbench.startupEditor": "none"
 }
