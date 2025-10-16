@@ -2,9 +2,9 @@
 if status is-interactive
     # login greeting
     set LAST_LOGIN (LANG=C last -n 10 "$USER" | \
-                    awk '!($3 == "login" && $4 == "screen")' | \
-                    awk '$8 != "gone" && $8 != "still"' | \
-                    head -n 1 | awk '{ print $4, $5, $6, $7 }')
+                    awk '!($3 == "login" && $4 == "screen") \
+                        && $8 != "gone" && $8 != "still" \
+                        { print $4, $5, $6, $7; exit }')
     set fish_greeting (test (uname) = "Darwin";
         and echo "";  # for MacOS
         or echo "Last login: $LAST_LOGIN"  # for Linux
