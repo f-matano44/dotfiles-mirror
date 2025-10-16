@@ -73,21 +73,30 @@
         "source.organizeImports": "always",
         "source.sort.json": "always"
     },
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
+    "editor.dragAndDrop": false,
     "editor.fontFamily": "'JetBrains Mono', 'BIZ UDGothic', monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 15,
     "editor.fontWeight": "bold",
     "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.minimap.showSlider": "always",
+    "editor.renderLineHighlight": "all",
     "editor.semanticHighlighting.enabled": false,
+    "editor.showFoldingControls": "always",
     "editor.stickyScroll.enabled": true,
     "editor.unicodeHighlight.nonBasicASCII": true,
+    "editor.wordSegmenterLocales": [
+        "ja"
+    ],
     "files.associations": {
         "*.bash": "shellscript",
         "CHANGELOG": "plaintext"
     },
     "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "flake8.severity": {
         "E": "Warning"
@@ -96,6 +105,7 @@
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
     "git.openRepositoryInParentFolders": "always",
+    "git.pruneOnFetch": true,
     "git.replaceTagsWhenPull": true,
     "git.suggestSmartCommit": false,
     "gitlens.codeLens.enabled": false,
@@ -108,10 +118,12 @@
     "python.terminal.activateEnvironment": false,
     "redhat.telemetry.enabled": true,
     "ruff.enable": false,
+    "scm.alwaysShowRepositories": true,
     "svg.preview.mode": "img",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
     // "terminal.integrated.inheritEnv": false,
@@ -122,9 +134,11 @@
     },
     "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
+    "workbench.editor.closeOnFileDelete": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.productIconTheme": "bongocat",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "workbench.view.alwaysShowHeaderActions": true
 }
