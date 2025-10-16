@@ -1,6 +1,7 @@
 {
     "cSpell.userWords": [
         "astype",
+        "axhline",
         "bandpass",
         "btype",
         "cheby",
@@ -12,11 +13,11 @@
         "dnntts",
         "doas",
         "downsampling",
+        "filtfilt",
         "finfo",
         "firwin",
-        "Fumiyoshi",
-        "filtfilt",
         "freqs",
+        "Fumiyoshi",
         "irfft",
         "isort",
         "jfloatwavio",
@@ -60,6 +61,7 @@
         "VIRTUALENV",
         "xfce",
         "xlabel",
+        "xlim",
         "ylabel",
         "ylim"
     ],
@@ -115,6 +117,7 @@
             "path": "/opt/homebrew/bin/fish"
         }
     },
+    "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.iconTheme": "vscode-icons",
     "workbench.productIconTheme": "bongocat",
