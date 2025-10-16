@@ -1,7 +1,7 @@
 # Commands to run in interactive sessions can go here
 if status is-interactive
     # login greeting
-    set LAST_LOGIN (LANG=C last -n 10 (whoami) | \
+    set LAST_LOGIN (LANG=C last -n 10 "$USER" | \
                     awk '!($3 == "login" && $4 == "screen")' | \
                     awk '$8 != "gone" && $8 != "still"' | \
                     head -n 1 | awk '{ print $4, $5, $6, $7 }')
@@ -14,8 +14,6 @@ if status is-interactive
     alias halt 'shutdown -h now'
     alias reboot 'shutdown -r now'
     alias えぃｔ exit
-    alias targz 'tar -zcvf' # targz filename.tar.gz dirname
-    alias untargz 'tar -zxvf' # untargz filename.tar.gz
 
     # atcoder
     alias atc_java "mkdir a b c d && \
