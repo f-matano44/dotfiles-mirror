@@ -53,7 +53,7 @@ set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx POETRY_VIRTUALENVS_IN_PROJECT 1
 if type -q pyenv
     pyenv init - fish | source
-    pyenv global 3.13
+    pyenv global 3.14
 end
 
 # pipx etc.
