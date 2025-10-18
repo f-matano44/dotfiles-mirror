@@ -13,7 +13,6 @@ if status is-interactive
     )
 
     # alias
-    alias halt 'shutdown -h now'
     alias reboot 'shutdown -r now'
     alias えぃｔ exit
 end
