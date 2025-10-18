@@ -9,7 +9,7 @@ if status is-interactive
     end
     set fish_greeting (test (uname) = "Darwin";
         and echo "";  # for MacOS
-        or echo "Last login: "(get_last_login)  # for Linux
+        or echo "Last login:" (get_last_login)  # for Linux
     )
 
     # alias
