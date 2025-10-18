@@ -16,13 +16,6 @@ if status is-interactive
     alias halt 'shutdown -h now'
     alias reboot 'shutdown -r now'
     alias えぃｔ exit
-
-    # atcoder
-    alias atc_java "mkdir a b c d && \
-        cp $HOME/dotfiles/atcoder/Main.java ./a/Main.java && \
-        cp $HOME/dotfiles/atcoder/Main.java ./b/Main.java && \
-        cp $HOME/dotfiles/atcoder/Main.java ./c/Main.java && \
-        cp $HOME/dotfiles/atcoder/Main.java ./d/Main.java"
 end
 
 switch (uname)
