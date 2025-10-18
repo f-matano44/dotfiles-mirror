@@ -1,13 +1,15 @@
 # Commands to run in interactive sessions can go here
 if status is-interactive
     # login greeting
-    set LAST_LOGIN (LANG=C last -n 10 "$USER" | \
-                    awk '!($3 == "login" && $4 == "screen") \
-                        && $8 != "gone" && $8 != "still" \
-                        { print $4, $5, $6, $7; exit }')
+    function get_last_login
+        LANG=C last "$USER" | awk '\
+            !($3 == "login" && $4 == "screen") \
+            && $8 != "gone" && $8 != "still" \
+            { print $4, $5, $6, $7; exit }'
+    end
     set fish_greeting (test (uname) = "Darwin";
         and echo "";  # for MacOS
-        or echo "Last login: $LAST_LOGIN"  # for Linux
+        or echo "Last login: $(get_last_login)"  # for Linux
     )
 
     # alias
