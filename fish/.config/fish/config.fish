@@ -42,7 +42,7 @@ switch (uname)
         fish_add_path "$PYENV_ROOT/bin"
 
         # gradle
-        fish_add_path "$HOME/.local/bin/gradle/bin/"
+        fish_add_path "$HOME/.local/gradle/bin/"
 
         # amdgpu
         fish_add_path "/opt/rocm-6.3.4/bin"
