@@ -7,7 +7,7 @@ if status is-interactive
             { print $3, $4, $5, $6; exit }'
     end
     set fish_greeting (test (uname) = "Darwin";
-        and echo "";  # for MacOS
+        and printf "";  # for MacOS
         or printf "Last login: %s\n" (get_last_login)  # for Linux
     )
 
