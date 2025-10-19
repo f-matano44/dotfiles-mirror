@@ -2,10 +2,9 @@
 if status is-interactive
     # login greeting
     function get_last_login
-        LANG=C last "$USER" | awk '\
-            !($3 == "login" && $4 == "screen") \
-            && $8 != "gone" && $8 != "still" \
-            { print $4, $5, $6, $7; exit }'
+        LANG=C last -R "$USER" | awk '\
+            $7 != "gone" && $7 != "still" \
+            { print $3, $4, $5, $6; exit }'
     end
     set fish_greeting (test (uname) = "Darwin";
         and echo "";  # for MacOS
