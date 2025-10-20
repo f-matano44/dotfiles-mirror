@@ -17,7 +17,6 @@ end
 
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
-set PYTHON_VERSION 3.13
 
 # pipx etc.
 fish_add_path "$HOME/.local/bin"
@@ -33,13 +32,18 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
+        # Python
+        alias python python3
+        alias pip "python -m pip"
+        alias pip3 "python3 -m pip"
+
     case Linux
         # pyenv
         set -gx PYENV_ROOT "$HOME/.pyenv"
         fish_add_path "$PYENV_ROOT/bin"
         if type -q pyenv
             pyenv init - fish | source
-            pyenv global "$PYTHON_VERSION"
+            pyenv global 3.13
         end
 
         # gradle
