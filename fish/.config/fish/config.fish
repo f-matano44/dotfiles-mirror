@@ -15,6 +15,13 @@ if status is-interactive
     alias えぃｔ exit
 end
 
+# Python
+set -gx PIP_REQUIRE_VIRTUALENV 1
+set PYTHON_VERSION 3.13
+
+# pipx etc.
+fish_add_path "$HOME/.local/bin"
+
 switch (uname)
     case Darwin
         # homebrew
@@ -26,10 +33,18 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
+        # Python
+        alias python python3
+        alias python3 "python$PYTHON_VERSION"
+
     case Linux
         # pyenv
         set -gx PYENV_ROOT "$HOME/.pyenv"
         fish_add_path "$PYENV_ROOT/bin"
+        if type -q pyenv
+            pyenv init - fish | source
+            pyenv global "$PYTHON_VERSION"
+        end
 
         # gradle
         fish_add_path "$HOME/.local/gradle/bin/"
@@ -37,14 +52,3 @@ switch (uname)
         # amdgpu
         fish_add_path "/opt/rocm-6.3.4/bin"
 end
-
-# Python
-set -gx PIP_REQUIRE_VIRTUALENV 1
-set -gx POETRY_VIRTUALENVS_IN_PROJECT 1
-if type -q pyenv
-    pyenv init - fish | source
-    pyenv global 3.13
-end
-
-# pipx etc.
-fish_add_path "$HOME/.local/bin"
