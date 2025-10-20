@@ -36,6 +36,8 @@ switch (uname)
         # Python
         alias python python3
         alias python3 "python$PYTHON_VERSION"
+        alias pip "python -m pip"
+        alias pip3 "python3 -m pip"
 
     case Linux
         # pyenv
