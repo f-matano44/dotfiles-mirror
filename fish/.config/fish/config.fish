@@ -15,12 +15,6 @@ if status is-interactive
     alias えぃｔ exit
 end
 
-# Python
-set -gx PIP_REQUIRE_VIRTUALENV 1
-
-# pipx etc.
-fish_add_path "$HOME/.local/bin"
-
 switch (uname)
     case Darwin
         # homebrew
@@ -52,3 +46,9 @@ switch (uname)
         # amdgpu
         fish_add_path "/opt/rocm-6.3.4/bin"
 end
+
+# Python
+set -gx PIP_REQUIRE_VIRTUALENV 1
+
+# pipx etc.
+fish_add_path "$HOME/.local/bin"
