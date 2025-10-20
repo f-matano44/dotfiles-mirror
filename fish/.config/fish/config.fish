@@ -33,12 +33,6 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
-        # Python
-        alias python python3
-        alias python3 "python$PYTHON_VERSION"
-        alias pip "python -m pip"
-        alias pip3 "python3 -m pip"
-
     case Linux
         # pyenv
         set -gx PYENV_ROOT "$HOME/.pyenv"
