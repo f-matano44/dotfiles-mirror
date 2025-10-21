@@ -17,7 +17,7 @@ end
 
 switch (uname)
     case Darwin
-        # homebrew
+        # Homebrew
         eval (/opt/homebrew/bin/brew shellenv)
         set -gx HOMEBREW_NO_ENV_HINTS 1
 
@@ -37,15 +37,15 @@ switch (uname)
         fish_add_path "$PYENV_ROOT/bin"
         pyenv init - fish | source
 
-        # gradle
+        # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
 
-        # amdgpu
+        # AMD ROCm
         fish_add_path "/opt/rocm-6.3.4/bin"
 end
 
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
 
-# pipx etc.
+# pipx
 fish_add_path "$HOME/.local/bin"
