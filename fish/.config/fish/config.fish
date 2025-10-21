@@ -35,10 +35,7 @@ switch (uname)
         # pyenv
         set -gx PYENV_ROOT "$HOME/.pyenv"
         fish_add_path "$PYENV_ROOT/bin"
-        if type -q pyenv
-            pyenv init - fish | source
-            pyenv global 3.13
-        end
+        pyenv init - fish | source
 
         # gradle
         fish_add_path "$HOME/.local/gradle/bin/"
