@@ -112,6 +112,9 @@
     "java.checkstyle.configuration": "google_checks.xml",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
+    "mypy-type-checker.args": [
+        "--cache-dir=${userHome}/.cache/mypy/${workspaceFolder}"
+    ],
     "mypy-type-checker.showNotifications": "always",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.languageServer": "Jedi",
