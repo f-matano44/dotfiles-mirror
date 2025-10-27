@@ -9,7 +9,7 @@
 
 * Shell: fish 4.x
 * Editor: VSCodium
-* Python manager: pyenv (+ poetry, uv)
+* Python manager: uv (+ python-is-python3)
 
 
 ## How to setup
