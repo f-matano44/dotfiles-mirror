@@ -47,5 +47,5 @@ end
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
 
-# pipx
+# local/bin
 fish_add_path "$HOME/.local/bin"
