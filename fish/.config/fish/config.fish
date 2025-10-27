@@ -26,7 +26,7 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
-        # Python
+        # python-is-python3
         alias python python3
         alias pip "python -m pip"
         alias pip3 "python3 -m pip"
@@ -42,5 +42,5 @@ end
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
 
-# local/bin
+# User binary
 fish_add_path "$HOME/.local/bin"
