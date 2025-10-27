@@ -32,11 +32,6 @@ switch (uname)
         alias pip3 "python3 -m pip"
 
     case Linux
-        # pyenv
-        set -gx PYENV_ROOT "$HOME/.pyenv"
-        fish_add_path "$PYENV_ROOT/bin"
-        pyenv init - fish | source
-
         # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
 
