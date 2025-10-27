@@ -1,16 +1,12 @@
 # dotfiles
 
 * I use this on mint & Ubuntu & macOS.
-* The setup script was checked with [\[ShellCheck\]](https://open-vsx.org/extension/timonwong/shellcheck).
-* License: **MIT**
-
 
 ## My environment
 
-* Shell: fish 4.x
+* Shell: fish
 * Editor: VSCodium
 * Python manager: uv (+ python-is-python3)
-
 
 ## How to setup
 
@@ -46,24 +42,23 @@ sh -c "sleep 10 && xmodmap ~/.xmodmap"
 
 * default value of Ubuntu 24.04
 
-```
+```text
 keycode 108 = Alt_R Meta_R Alt_R Meta_R
 ```
 
 ## 3rd party notice
 
 * [\[Lucario By Raphael Amorim\]](https://github.com/raphamorim/lucario)
-    * LICENSE: MIT License
-    * dotfiles/vim/lucario.vim, gnome-terminal/lucario.sh
+  * LICENSE: MIT License
+  * dotfiles/vim/lucario.vim, gnome-terminal/lucario.sh
 
 * [\[【詳解】モテたいVimmer必見　快適にコーディングするためのvimrc解説 By ahiruman5\]](https://qiita.com/ahiruman5/items/4f3c845500c172a02935)
-    * LICENSE: Qiita 利用規約 第二章 第７条 3
-    * vim/vimrc
+  * LICENSE: Qiita 利用規約 第二章 第７条 3
+  * vim/vimrc
 
 * <https://github.com/github/gitignore>
-    * LICENSE: CC0
-    * git/.gitignore_global
-
+  * LICENSE: CC0
+  * git/.config/git/ignore
 
 ## Reference(s)
 
