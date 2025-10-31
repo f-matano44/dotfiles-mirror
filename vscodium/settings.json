@@ -119,6 +119,7 @@
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.languageServer": "Jedi",
     "python.terminal.activateEnvironment": false,
+    "python.terminal.shellIntegration.enabled": false,
     "redhat.telemetry.enabled": true,
     "ruff.enable": false,
     "scm.alwaysShowRepositories": true,
