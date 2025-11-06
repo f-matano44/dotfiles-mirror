@@ -8,7 +8,7 @@ if status is-interactive
     end
     set fish_greeting (test (uname) = "Darwin";
         and printf "";  # for MacOS
-        or printf "Last login: %s\n" (get_last_login)  # for Linux
+        or printf "Last login: %s" (get_last_login)  # for Linux
     )
 
     # alias
