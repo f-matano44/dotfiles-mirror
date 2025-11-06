@@ -41,6 +41,7 @@ end
 
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
+set -gx MPLBACKEND qtagg
 
 # User's binary
 fish_add_path "$HOME/.local/bin"
