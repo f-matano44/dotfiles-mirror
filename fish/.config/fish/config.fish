@@ -13,6 +13,7 @@ if status is-interactive
 
     # alias
     alias えぃｔ exit
+    alias docker podman
 end
 
 switch (uname)
