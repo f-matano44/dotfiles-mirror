@@ -36,7 +36,10 @@ switch (uname)
         fish_add_path "$HOME/.local/gradle/bin/"
 
         # AMD ROCm
-        fish_add_path "/opt/rocm-6.3.4/bin"
+        # https://rocm.docs.amd.com/en/latest/reference/gpu-arch-specs.html
+        set -gx GFX_ARCH gfx1102
+        set -gx ROCM_VERSION 6.3.4
+        fish_add_path "/opt/rocm-$ROCM_VERSION/bin"
 end
 
 # Python
