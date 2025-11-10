@@ -8,11 +8,12 @@ if status is-interactive
     end
     set fish_greeting (test (uname) = "Darwin";
         and printf "";  # for MacOS
-        or printf "Last login: %s\n" (get_last_login)  # for Linux
+        or printf "Last login: %s" (get_last_login)  # for Linux
     )
 
     # alias
     alias えぃｔ exit
+    alias docker podman
 end
 
 switch (uname)
@@ -44,6 +45,7 @@ end
 
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
+set -gx MPLBACKEND qtagg
 
 # User's binary
 fish_add_path "$HOME/.local/bin"
