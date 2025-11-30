@@ -141,6 +141,7 @@
     "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.empty.hint": "hidden",
     "workbench.iconTheme": "vscode-icons",
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
