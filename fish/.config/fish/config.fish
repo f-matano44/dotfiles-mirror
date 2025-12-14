@@ -56,5 +56,8 @@ set -gx MPLBACKEND qtagg
 set -gx UV_PYTHON 3.13
 set -gx UV_VENV_CLEAR 1
 
+# Podman
+set -gx PODMAN_COMPOSE_WARNING_LOGS 0
+
 # User's binary
 fish_add_path "$HOME/.local/bin"
