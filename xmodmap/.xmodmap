@@ -1,3 +1,6 @@
+! Right alt
 keycode 108 = NoSymbol
+! Page up
 keycode 112 = NoSymbol
+! Page down
 keycode 117 = NoSymbol
