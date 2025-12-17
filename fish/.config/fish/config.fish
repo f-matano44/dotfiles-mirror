@@ -16,6 +16,9 @@ if status is-interactive
     alias docker podman
 end
 
+# User's binary
+fish_add_path "$HOME/.local/bin"
+
 switch (uname)
     case Darwin
         # Homebrew
@@ -54,6 +57,3 @@ set -gx UV_VENV_CLEAR 1
 
 # Podman
 set -gx PODMAN_COMPOSE_WARNING_LOGS 0
-
-# User's binary
-fish_add_path "$HOME/.local/bin"
