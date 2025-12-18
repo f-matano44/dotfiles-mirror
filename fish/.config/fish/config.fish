@@ -10,10 +10,6 @@ if status is-interactive
         and printf "";  # for MacOS
         or printf "Last login: %s" (get_last_login)  # for Linux
     )
-
-    # alias
-    alias えぃｔ exit
-    alias docker podman
 end
 
 # User's binary
@@ -56,4 +52,5 @@ set -gx UV_PYTHON 3.13
 set -gx UV_VENV_CLEAR 1
 
 # Podman
+alias docker podman
 set -gx PODMAN_COMPOSE_WARNING_LOGS 0
