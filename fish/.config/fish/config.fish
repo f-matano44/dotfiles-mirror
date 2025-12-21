@@ -58,6 +58,8 @@ set -gx UV_PYTHON 3.13
 set -gx UV_VENV_CLEAR 1
 
 # Podman
-alias docker podman
-set -gx PODMAN_COMPOSE_WARNING_LOGS 0
-set -gx DOCKER_HOST "unix://$PODMAN_SOCKET_LOCATION"
+if type -q podman
+    alias docker podman
+    set -gx PODMAN_COMPOSE_WARNING_LOGS 0
+    set -gx DOCKER_HOST "unix://$PODMAN_SOCKET_LOCATION"
+end
