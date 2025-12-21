@@ -44,7 +44,7 @@ sh -c "sleep 10 && xmodmap ~/.xmodmap"
 
 * [\[Lucario By Raphael Amorim\]](https://github.com/raphamorim/lucario)
   * LICENSE: MIT License
-  * dotfiles/vim/lucario.vim, gnome-terminal/lucario.sh
+  * gnome-terminal/lucario.sh
 
 * [\[【詳解】モテたいVimmer必見　快適にコーディングするためのvimrc解説 By ahiruman5\]](https://qiita.com/ahiruman5/items/4f3c845500c172a02935)
   * LICENSE: Qiita 利用規約 第二章 第７条 3
