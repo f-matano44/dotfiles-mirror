@@ -34,12 +34,6 @@ switch (uname)
         # coreutils
         fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
 
-        # get podman socket
-        # https://podman-desktop.io/docs/migrating-from-docker/using-the-docker_host-environment-variable
-        if type -q podman
-            set PODMAN_SOCKET_LOCATION (podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')
-        end
-
     case Linux
         # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
@@ -49,6 +43,11 @@ switch (uname)
         set -gx GFX_ARCH gfx1102
         set -gx ROCM_VERSION 6.3.4
         fish_add_path "/opt/rocm-$ROCM_VERSION/bin"
+
+        # get podman socket
+        if type -q podman
+            set -gx DOCKER_HOST "unix:///run/user/1000/podman/podman-machine-default-api.sock"
+        end
 end
 
 # Python
@@ -61,5 +60,4 @@ set -gx UV_VENV_CLEAR 1
 if type -q podman
     alias docker podman
     set -gx PODMAN_COMPOSE_WARNING_LOGS 0
-    set -gx DOCKER_HOST "unix://$PODMAN_SOCKET_LOCATION"
 end
