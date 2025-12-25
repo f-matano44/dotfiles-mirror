@@ -56,3 +56,7 @@ if type -q podman
     alias docker podman
     set -gx PODMAN_COMPOSE_WARNING_LOGS 0
 end
+
+# LaTeX
+abbr --add texlive_container_build "podman build -t texlive-uplatex ."
+abbr --add latex_build "podman run --rm -v \"$PWD:/workdir\" texlive-uplatex"
