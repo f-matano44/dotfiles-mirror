@@ -43,11 +43,6 @@ switch (uname)
         set -gx GFX_ARCH gfx1102
         set -gx ROCM_VERSION 6.3.4
         fish_add_path "/opt/rocm-$ROCM_VERSION/bin"
-
-        # get podman socket
-        if type -q podman
-            set -gx DOCKER_HOST "unix:///run/user/1000/podman/podman-machine-default-api.sock"
-        end
 end
 
 # Python
