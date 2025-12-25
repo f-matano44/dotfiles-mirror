@@ -136,6 +136,11 @@
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.profiles.linux": {
+        "POSIX_sh": {
+            "path": "sh"
+        }
+    },
     "terminal.integrated.profiles.osx": {
         "fish": {
             "path": "/opt/homebrew/bin/fish"
