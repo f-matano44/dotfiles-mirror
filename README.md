@@ -54,6 +54,10 @@ sh -c "sleep 10 && xmodmap ~/.xmodmap"
   * LICENSE: CC0
   * git/.config/git/ignore
 
+* [【Dracula theme】](https://draculatheme.com/)
+  * LICENSE: [MIT License](3rdPartyNotice/Dracula.LICENSE)
+  * fish/.config/fish/themes/Dracula Official.theme
+
 ## Reference(s)
 
 * [\[株式会社エムケイシステム TECH BLOG M1 Mac の環境構築メモ\]](https://blog.mksc.jp/contents/apple-silicon/)
