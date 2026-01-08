@@ -48,8 +48,10 @@ set -gx MPLBACKEND qtagg
 set -gx UV_PYTHON 3.13
 set -gx UV_VENV_CLEAR 1
 
-# Podman
-if type -q podman
+# Container
+if type -q docker
+    alias podman docker
+else if type -q podman
     alias docker podman
     set -gx PODMAN_COMPOSE_WARNING_LOGS 0
 end
