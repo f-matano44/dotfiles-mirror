@@ -59,3 +59,8 @@ end
 # LaTeX
 abbr --add texlive_container_build "podman build -t texlive-uplatex ."
 abbr --add latex_build "podman run --rm -v \"$PWD:/workdir\" texlive-uplatex"
+
+# Load local environment variable
+if type -q direnv:
+    direnv hook fish | source
+end
