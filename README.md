@@ -37,7 +37,7 @@ winetricks --self-update
 * Add below command to "Startup Applications"
 
 ```sh
-sh -c "sleep 10 && xmodmap ~/.xmodmap"
+sh -c "sleep 10 && xmodmap ~/.config/xmodmap"
 ```
 
 ## 3rd party notice
