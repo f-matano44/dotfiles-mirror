@@ -1,11 +1,6 @@
 # Commands to run in interactive sessions can go here
 if status is-interactive
     # login greeting
-    function get_last_login
-        LANG=C last -R "$USER" | awk '\
-            $7 != "gone" && $7 != "still" && $8 != "still" \
-            { print $3, $4, $5, $6, $9; exit }'
-    end
     set fish_greeting (test (uname) = "Darwin";
         and printf "";  # for MacOS
         or printf "Last login: %s" (get_last_login)  # for Linux
@@ -48,19 +43,23 @@ set -gx MPLBACKEND qtagg
 set -gx UV_PYTHON 3.13
 set -gx UV_VENV_CLEAR 1
 
-# Container
-if type -q docker
-    alias podman docker
-else if type -q podman
-    alias docker podman
-    set -gx PODMAN_COMPOSE_WARNING_LOGS 0
-end
+if status is-interactive
+    # Container
+    if type -q docker
+        alias podman docker
+    else if type -q podman
+        alias docker podman
+        set -gx PODMAN_COMPOSE_WARNING_LOGS 0
+    end
 
-# LaTeX
-abbr --add texlive_container_build "podman build -t texlive-uplatex ."
-abbr --add latex_build "podman run --rm -v \"$PWD:/workdir\" texlive-uplatex"
+    # LaTeX
+    if type -q podman
+        abbr --add texlive_container_build "podman build -t texlive-uplatex ."
+        abbr --add latex_build "podman run --rm -v \"$PWD:/workdir\" texlive-uplatex"
+    end
 
-# Load local environment variable
-if type -q direnv
-    direnv hook fish | source
+    # Load local environment variable
+    if type -q direnv
+        direnv hook fish | source
+    end
 end
