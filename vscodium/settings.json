@@ -1,6 +1,7 @@
 {
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
+    "chatgpt.openOnStartup": true,
     "cSpell.userWords": [
         "astype",
         "axhline",
@@ -70,6 +71,7 @@
     ],
     "csv-edit.readOption_hasHeader": "true",
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {
         "source.organizeImports": "always",
         "source.sort.json": "always"
@@ -157,6 +159,5 @@
     "workbench.navigationControl.enabled": false,
     "workbench.productIconTheme": "bongocat",
     "workbench.startupEditor": "none",
-    "workbench.view.alwaysShowHeaderActions": true,
-    "editor.accessibilitySupport": "off"
+    "workbench.view.alwaysShowHeaderActions": true
 }
