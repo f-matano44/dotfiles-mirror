@@ -18,13 +18,6 @@ cd dotfiles/
 stow fish git vim xfce xmodmap
 ```
 
-* Set gitconfig_local (for gpg signing)
-
-```sh
-touch "$HOME"/.gitconfig_local
-ln -s "$HOME"/.gitconfig_local path/to/dotfiles/git/.gitconfig_local
-```
-
 ## How to setup WINE
 
 ```sh
