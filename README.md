@@ -15,7 +15,7 @@
 ```sh
 git clone https://gitlab.com/f-matano44/dotfiles.git
 cd dotfiles/
-stow fish git vim xfce xmodmap codex
+stow codex fish git xfce xmodmap
 ```
 
 ## How to setup WINE
