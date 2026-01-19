@@ -39,10 +39,6 @@ sh -c "sleep 10 && xmodmap ~/.config/xmodmap"
   * LICENSE: MIT License
   * xfce/.local/share/xfce4/terminal/colorschemes/lucario.theme
 
-* [\[【詳解】モテたいVimmer必見　快適にコーディングするためのvimrc解説 By ahiruman5\]](https://qiita.com/ahiruman5/items/4f3c845500c172a02935)
-  * LICENSE: Qiita 利用規約 第二章 第７条 3
-  * vim/vimrc
-
 * <https://github.com/github/gitignore>
   * LICENSE: CC0
   * git/.config/git/ignore
