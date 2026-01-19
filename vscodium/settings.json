@@ -140,6 +140,7 @@
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.initialHint": false,
     "terminal.integrated.profiles.linux": {
         "POSIX_sh": {
             "path": "sh"
