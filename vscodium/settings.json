@@ -96,6 +96,7 @@
         "ja"
     ],
     "files.associations": {
+        ".gitconfig_local": "properties",
         "*.bash": "shellscript",
         "CHANGELOG": "plaintext"
     },
