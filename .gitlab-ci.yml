@@ -9,4 +9,4 @@ lint:
   script:
     - apk add stow
     - shellcheck setup_codium.bash
-    - stow -nv fish git vim xmodmap
+    - stow -nv codex fish git xfce xmodmap
