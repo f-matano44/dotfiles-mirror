@@ -46,4 +46,5 @@ sh -c "sleep 10 && xmodmap ~/.config/xmodmap"
 ## Reference(s)
 
 * [\[株式会社エムケイシステム TECH BLOG M1 Mac の環境構築メモ\]](https://blog.mksc.jp/contents/apple-silicon/)
+
 * [\[fishで「パスを通す」ための最終解答\]](https://zenn.dev/estra/articles/zenn-fish-add-path-final-answer)
