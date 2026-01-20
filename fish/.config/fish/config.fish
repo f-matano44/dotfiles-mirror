@@ -45,9 +45,7 @@ set -gx UV_VENV_CLEAR 1
 
 if status is-interactive
     # Container
-    if type -q docker
-        alias podman docker
-    else if type -q podman
+    if type -q podman
         alias docker podman
         set -gx PODMAN_COMPOSE_WARNING_LOGS 0
     end
