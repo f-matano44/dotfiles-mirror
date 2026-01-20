@@ -47,6 +47,7 @@ extensionID=(
     "pixl-garden.BongoCat"
     # "shengchen.vscode-checkstyle"
     "streetsidesoftware.code-spell-checker"
+    "openai.chatgpt"
     "janisdd.vscode-edit-csv"
     "usernamehw.errorlens"
     "tamasfe.even-better-toml"
@@ -63,10 +64,10 @@ extensionID=(
     "ms-toolsai.jupyter-renderers"
     "ms-toolsai.vscode-jupyter-slideshow"
     "redhat.java"
+    "James-Yu.latex-workshop"
     "ritwickdey.LiveServer"
     # "MathWorks.language-matlab"
     "ms-python.mypy-type-checker"
-    "ionutvmi.path-autocomplete"
     "OrhunUlusahin.praatvscode"
     "ms-python.python"
     "ms-python.debugpy"
@@ -77,7 +78,6 @@ extensionID=(
     "richie5um2.vscode-sort-json"
     "jock.svg"
     "vscode-icons-team.vscode-icons"
-    "tomoki1207.pdf"
     "redhat.vscode-yaml"
 )
 for extID in "${extensionID[@]}"; do
