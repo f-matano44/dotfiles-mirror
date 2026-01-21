@@ -1,4 +1,4 @@
-{
+{ // https://cspell.org/docs/Configuration
     "version": "0.2",
     "words": [
         "amdgpu",
