@@ -40,6 +40,7 @@ elif [ "$OS" = "Linux" ]; then
     ln -s "$DOTFILES"/vscodium/cspell.json "$HOME"/.config/cspell.json
 else
     echo "Unsupported OS: $OS"
+    exit 1
 fi
 
 
