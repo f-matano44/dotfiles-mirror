@@ -12,6 +12,9 @@
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
+    "[scminput]": {
+        "cSpell.showAutocompleteDirectiveSuggestions": false
+    },
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
     "chatgpt.openOnStartup": true,
