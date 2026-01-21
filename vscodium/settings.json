@@ -125,6 +125,7 @@
     "latex-workshop.docker.enabled": true,
     "latex-workshop.docker.image.latex": "docker.io/texlive/texlive:TL2024-historic",
     "latex-workshop.docker.path": "podman",
+    "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.outDir": "build",
     "latex-workshop.latex.recipe.default": "latexmk (latexmkrc)",
