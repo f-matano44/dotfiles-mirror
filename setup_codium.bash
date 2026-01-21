@@ -29,6 +29,7 @@ if [ "$OS" = "Darwin" ]; then
     fi
     ln -s "$DOTFILES"/vscodium/settings.json \
         "$HOME/Library/Application Support/VSCodium/User/settings.json"
+    ln -s "$DOTFILES"/vscodium/cspell.json "$HOME"/.config/cspell.json
 elif [ "$OS" = "Linux" ]; then
     if [ -f "$HOME"/.config/VSCodium/User/settings.json ]; then
         mv "$HOME"/.config/VSCodium/User/settings.json \
@@ -36,6 +37,7 @@ elif [ "$OS" = "Linux" ]; then
     fi
     ln -s "$DOTFILES"/vscodium/settings.json \
         "$HOME"/.config/VSCodium/User/settings.json
+    ln -s "$DOTFILES"/vscodium/cspell.json "$HOME"/.config/cspell.json
 else
     echo "Unsupported OS: $OS"
 fi
