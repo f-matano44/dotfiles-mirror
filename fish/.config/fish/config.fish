@@ -50,12 +50,6 @@ if status is-interactive
         set -gx PODMAN_COMPOSE_WARNING_LOGS 0
     end
 
-    # LaTeX
-    if type -q podman
-        abbr --add texlive_container_build "podman build -t texlive-uplatex ."
-        abbr --add latex_build "podman run --rm -v \"$PWD:/workdir\" texlive-uplatex"
-    end
-
     # Load local environment variable
     if type -q direnv
         direnv hook fish | source
