@@ -1,4 +1,14 @@
 {
+    "[latex]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.nonBasicASCII": false,
+        "editor.wordWrap": "on"
+    },
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.nonBasicASCII": false,
+        "editor.wordWrap": "on"
+    },
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
     "chatgpt.openOnStartup": true,
@@ -150,13 +160,8 @@
     "terminal.integrated.fontWeight": "bold",
     "terminal.integrated.initialHint": false,
     "terminal.integrated.profiles.linux": {
-        "POSIX_sh": {
+        "sh": {
             "path": "sh"
-        }
-    },
-    "terminal.integrated.profiles.osx": {
-        "fish": {
-            "path": "/opt/homebrew/bin/fish"
         }
     },
     "update.showReleaseNotes": false,
