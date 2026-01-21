@@ -43,7 +43,6 @@ fi
 
 # install codium extension
 extensionID=(
-    "ms-python.black-formatter"
     "pixl-garden.BongoCat"
     # "shengchen.vscode-checkstyle"
     "streetsidesoftware.code-spell-checker"
@@ -52,10 +51,8 @@ extensionID=(
     "usernamehw.errorlens"
     "tamasfe.even-better-toml"
     "bmalehorn.vscode-fish"
-    "ms-python.flake8"
     "eamodio.gitlens"
     "oderwat.indent-rainbow"
-    "ms-python.isort"
     "MS-CEINTL.vscode-language-pack-ja"
     "wmanth.jar-viewer"
     "ms-toolsai.jupyter"

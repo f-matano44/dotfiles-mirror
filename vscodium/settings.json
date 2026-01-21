@@ -9,6 +9,9 @@
         "editor.unicodeHighlight.nonBasicASCII": false,
         "editor.wordWrap": "on"
     },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
     "chatgpt.openOnStartup": true,
@@ -83,7 +86,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "always",
+        "source.organizeImports.ruff": "always",
         "source.sort.json": "always"
     },
     "editor.detectIndentation": true,
