@@ -21,27 +21,32 @@ if [ -d "$DOTFILES"/.old ]; then
     rmdir "$DOTFILES"/.old
 fi
 
+
+# Set Destination
 OS=$(uname)
+SETTINGS_SOURCE="$DOTFILES/vscodium/settings.json"
+CSPELL_SOURCE="$DOTFILES/vscodium/cspell.json"
 if [ "$OS" = "Darwin" ]; then
-    if [ -f "$HOME/Library/Application Support/VSCodium/User/settings.json" ]; then
-        mv "$HOME/Library/Application Support/VSCodium/User/settings.json" \
-            "$BACKUP_FOLDER"/codium_config.json
-    fi
-    ln -s "$DOTFILES"/vscodium/settings.json \
-        "$HOME/Library/Application Support/VSCodium/User/settings.json"
-    ln -s "$DOTFILES"/vscodium/cspell.json "$HOME"/.config/cspell.json
+    SETTINGS_DEST="$HOME/Library/Application Support/VSCodium/User/settings.json"
+    CSPELL_DEST="$HOME/.config/cspell.json"
 elif [ "$OS" = "Linux" ]; then
-    if [ -f "$HOME"/.config/VSCodium/User/settings.json ]; then
-        mv "$HOME"/.config/VSCodium/User/settings.json \
-            "$BACKUP_FOLDER"/codium_config.json
-    fi
-    ln -s "$DOTFILES"/vscodium/settings.json \
-        "$HOME"/.config/VSCodium/User/settings.json
-    ln -s "$DOTFILES"/vscodium/cspell.json "$HOME"/.config/cspell.json
+    SETTINGS_DEST="$HOME/.config/VSCodium/User/settings.json"
+    CSPELL_DEST="$HOME/.config/cspell.json"
 else
     echo "Unsupported OS: $OS"
     exit 1
 fi
+
+
+# Set Symbolic link
+if [ -f "$SETTINGS_DEST" ]; then
+    mv "$SETTINGS_DEST" "$BACKUP_FOLDER"/codium_config.json
+fi
+if [ -f "$CSPELL_DEST" ]; then
+    mv "$CSPELL_DEST" "$BACKUP_FOLDER"/cspell.json
+fi
+ln -s "$SETTINGS_SOURCE" "$SETTINGS_DEST"
+ln -s "$CSPELL_SOURCE" "$CSPELL_DEST"
 
 
 # install codium extension
