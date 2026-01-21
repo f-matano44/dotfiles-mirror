@@ -40,7 +40,7 @@ end
 # Python
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
-set -gx UV_PYTHON 3.13
+set -gx UV_PYTHON 3.14
 set -gx UV_VENV_CLEAR 1
 
 if status is-interactive
