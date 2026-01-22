@@ -1,0 +1,5 @@
+codex
+fish
+git
+xfce
+xmodmap
