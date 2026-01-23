@@ -1,0 +1,3 @@
+#! /bin/sh
+xinput disable "Surface Touch Device"
+(sleep 10 && xmodmap "$HOME/.config/xmodmap") &

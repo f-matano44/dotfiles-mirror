@@ -25,14 +25,6 @@ WINEARCH=win32 wineboot
 winetricks --self-update
 ```
 
-## How to setup xmodmap
-
-* Add below command to "Startup Applications"
-
-```sh
-sh -c "sleep 10 && xmodmap ~/.config/xmodmap"
-```
-
 ## 3rd party notice
 
 * [\[Lucario By Raphael Amorim\]](https://github.com/raphamorim/lucario)
