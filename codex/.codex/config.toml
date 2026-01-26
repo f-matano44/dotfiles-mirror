@@ -12,4 +12,6 @@ args = [
     "start-mcp-server",
     "--context",
     "codex",
+    "--enable-web-dashboard",
+    "false",
 ]
