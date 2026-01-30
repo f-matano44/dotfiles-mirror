@@ -41,6 +41,7 @@ end
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
 set -gx UV_VENV_CLEAR 1
+set -e UV_PYTHON
 
 if status is-interactive
     # Container
