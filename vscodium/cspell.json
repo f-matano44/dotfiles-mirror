@@ -36,6 +36,7 @@
         "eamodio",
         "errorlens",
         "filtfilt",
+        "findutils",
         "finfo",
         "firwin",
         "freqs",

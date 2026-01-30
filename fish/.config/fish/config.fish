@@ -26,8 +26,9 @@ switch (uname)
         alias pip "python -m pip"
         alias pip3 "python3 -m pip"
 
-        # coreutils
+        # GNU Utilities
         fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
+        fish_add_path /opt/homebrew/opt/findutils/libexec/gnubin
 
     case Linux
         # Gradle
