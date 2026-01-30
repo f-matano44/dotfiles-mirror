@@ -1,12 +1,13 @@
 # dotfiles
 
-* I use this on mint, Ubuntu and macOS.
+* I use this on MacOS (M1), Linux mint (HomeBuilt).
 
 ## My environment
 
+* Terminal: Terminal.app (MacOS), xfce4-terminal (Linux)
 * Shell: fish
-* Editor: VSCodium
-* Python manager: uv (+ python-is-python3)
+* Editor: VSCodium + Codex
+* Python manager: uv
 
 ## How to setup using GNU stow
 
