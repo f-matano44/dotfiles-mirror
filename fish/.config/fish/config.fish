@@ -23,8 +23,6 @@ switch (uname)
 
         # python-is-python3
         alias python python3
-        alias pip "python -m pip"
-        alias pip3 "python3 -m pip"
 
         # GNU Utilities
         fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
