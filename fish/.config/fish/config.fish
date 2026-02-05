@@ -32,6 +32,9 @@ switch (uname)
         # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
 
+        # Node.js
+        fish_add_path "$HOME/.local/node-v24.13.0-linux-x64/bin"
+
         # AMD Driver
         fish_add_path "/opt/rocm-6.3.4/bin"
 end
