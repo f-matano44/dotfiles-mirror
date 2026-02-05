@@ -12,12 +12,10 @@
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "[scminput]": {
-        "cSpell.showAutocompleteDirectiveSuggestions": false
-    },
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
     "chatgpt.openOnStartup": true,
+    "cSpell.showAutocompleteDirectiveSuggestions": false,
     "csv-edit.readOption_hasHeader": "true",
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
