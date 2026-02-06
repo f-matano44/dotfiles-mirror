@@ -70,6 +70,7 @@ extensionID=(
     "ms-toolsai.vscode-jupyter-slideshow"
     "redhat.java"
     "James-Yu.latex-workshop"
+    "ritwickdey.LiveServer"
     # "MathWorks.language-matlab"
     "ms-python.mypy-type-checker"
     "OrhunUlusahin.praatvscode"
