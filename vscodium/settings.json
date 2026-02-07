@@ -111,5 +111,6 @@
     "workbench.navigationControl.enabled": false,
     "workbench.productIconTheme": "bongocat",
     "workbench.startupEditor": "none",
-    "workbench.view.alwaysShowHeaderActions": true
+    "workbench.view.alwaysShowHeaderActions": true,
+    "telemetry.telemetryLevel": "all"
 }
