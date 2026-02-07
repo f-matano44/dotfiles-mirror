@@ -90,6 +90,7 @@
     "scm.alwaysShowRepositories": true,
     "scm.defaultViewMode": "tree",
     "svg.preview.mode": "img",
+    "telemetry.telemetryLevel": "all",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.defaultProfile.osx": "fish",
@@ -111,6 +112,5 @@
     "workbench.navigationControl.enabled": false,
     "workbench.productIconTheme": "bongocat",
     "workbench.startupEditor": "none",
-    "workbench.view.alwaysShowHeaderActions": true,
-    "telemetry.telemetryLevel": "all"
+    "workbench.view.alwaysShowHeaderActions": true
 }
