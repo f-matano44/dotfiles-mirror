@@ -10,7 +10,8 @@
         "editor.wordWrap": "on"
     },
     "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff"
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.semanticHighlighting.enabled": false
     },
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
@@ -35,7 +36,6 @@
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.renderLineHighlight": "all",
-    "editor.semanticHighlighting.enabled": false,
     "editor.showFoldingControls": "always",
     "editor.stickyScroll.enabled": true,
     "editor.unicodeHighlight.nonBasicASCII": true,
