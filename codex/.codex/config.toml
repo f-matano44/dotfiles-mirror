@@ -1,6 +1,7 @@
-model = "gpt-5.2-codex"
+model = "gpt-5.3-codex"
 model_reasoning_effort = "medium"
 web_search = "live"
+personality = "pragmatic"
 
 # 起動コマンド：Activate the current dir as project using serena
 [mcp_servers.serena]
