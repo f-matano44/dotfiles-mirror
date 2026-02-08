@@ -21,9 +21,6 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
-        # python-is-python3
-        alias python python3
-
         # GNU Utilities
         fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
         fish_add_path /opt/homebrew/opt/findutils/libexec/gnubin
@@ -32,24 +29,28 @@ switch (uname)
         # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
 
+        # Node.js
+        fish_add_path "$HOME/.local/node-v24.13.0-linux-x64/bin"
+
         # AMD Driver
         fish_add_path "/opt/rocm-6.3.4/bin"
 end
 
 # Python
+alias python python3
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
 set -gx UV_VENV_CLEAR 1
 set -e UV_PYTHON
 
 if status is-interactive
-    # Container
+    # Docker -> Podman
     if type -q podman
         alias docker podman
         set -gx PODMAN_COMPOSE_WARNING_LOGS 0
     end
 
-    # Load local environment variable
+    # Load dot-envrc
     if type -q direnv
         direnv hook fish | source
     end

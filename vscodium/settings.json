@@ -10,15 +10,15 @@
         "editor.wordWrap": "on"
     },
     "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    "[scminput]": {
-        "cSpell.showAutocompleteDirectiveSuggestions": false
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.semanticHighlighting.enabled": false
     },
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
     "chatgpt.openOnStartup": true,
+    "cSpell.showAutocompleteDirectiveSuggestions": false,
     "csv-edit.readOption_hasHeader": "true",
+    "diffEditor.experimental.useTrueInlineView": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {
@@ -33,17 +33,18 @@
     "editor.fontWeight": "bold",
     "editor.formatOnSave": true,
     "editor.guides.bracketPairs": true,
-    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.inlayHints.enabled": "off",
     "editor.minimap.enabled": false,
-    "editor.minimap.showSlider": "always",
     "editor.renderLineHighlight": "all",
-    "editor.semanticHighlighting.enabled": false,
+    "editor.renderWhitespace": "all",
     "editor.showFoldingControls": "always",
+    "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": true,
     "editor.unicodeHighlight.nonBasicASCII": true,
     "editor.wordSegmenterLocales": [
         "ja"
     ],
+    "editor.wrappingIndent": "indent",
     "files.associations": {
         ".gitconfig_local": "properties",
         "*.bash": "shellscript",
@@ -55,7 +56,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "git.autofetch": true,
+    "git.autofetch": "all",
     "git.confirmSync": false,
     "git.enableCommitSigning": true,
     "git.enableStatusBarSync": false,
@@ -87,7 +88,9 @@
     "python.terminal.shellIntegration.enabled": false,
     "redhat.telemetry.enabled": true,
     "scm.alwaysShowRepositories": true,
+    "scm.defaultViewMode": "tree",
     "svg.preview.mode": "img",
+    "telemetry.telemetryLevel": "all",
     "terminal.integrated.confirmOnExit": "hasChildProcesses",
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.defaultProfile.osx": "fish",

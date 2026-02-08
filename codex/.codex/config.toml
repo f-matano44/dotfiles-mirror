@@ -1,6 +1,6 @@
 model = "gpt-5.2-codex"
 model_reasoning_effort = "medium"
-features.web_search_request = true
+web_search = "live"
 
 # 起動コマンド：Activate the current dir as project using serena
 [mcp_servers.serena]
