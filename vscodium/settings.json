@@ -2,12 +2,14 @@
     "[latex]": {
         "editor.unicodeHighlight.ambiguousCharacters": false,
         "editor.unicodeHighlight.nonBasicASCII": false,
-        "editor.wordWrap": "on"
+        "editor.wordWrap": "on",
+        "editor.wrappingIndent": "same"
     },
     "[markdown]": {
         "editor.unicodeHighlight.ambiguousCharacters": false,
         "editor.unicodeHighlight.nonBasicASCII": false,
-        "editor.wordWrap": "on"
+        "editor.wordWrap": "on",
+        "editor.wrappingIndent": "same"
     },
     "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
