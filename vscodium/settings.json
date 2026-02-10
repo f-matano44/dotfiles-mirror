@@ -37,6 +37,7 @@
     "editor.guides.bracketPairs": true,
     "editor.inlayHints.enabled": "off",
     "editor.minimap.enabled": false,
+    "editor.mouseWheelScrollSensitivity": 1.6,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
     "editor.showFoldingControls": "always",
