@@ -103,7 +103,7 @@
     "terminal.integrated.initialHint": false,
     "terminal.integrated.profiles.linux": {
         "sh": {
-            "path": "sh"
+            "path": "/bin/sh"
         }
     },
     "update.showReleaseNotes": false,
