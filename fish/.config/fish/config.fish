@@ -38,6 +38,7 @@ end
 
 # Python
 alias python python3
+alias upython "uv run python"
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
 set -gx UV_VENV_CLEAR 1
