@@ -14,6 +14,7 @@ I mainly use this repo on macOS (M1 chip) and Linux Mint (home-built).
 
 ```sh
 xargs -a stow_targets.txt stow
+bash setup_codium.bash
 ```
 
 ## Third-party notices
