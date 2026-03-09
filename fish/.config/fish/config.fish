@@ -37,12 +37,12 @@ switch (uname)
 end
 
 # Python
-alias python python3
-alias upython "uv run python"
+set -e UV_PYTHON
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
 set -gx UV_VENV_CLEAR 1
-set -e UV_PYTHON
+alias python python3
+abbr upython "uv run python"
 
 if status is-interactive
     # Docker -> Podman
