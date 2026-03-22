@@ -83,7 +83,6 @@
         "--cache-dir=${userHome}/.cache/mypy/${workspaceFolder}"
     ],
     "mypy-type-checker.showNotifications": "always",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
     "python.languageServer": "Jedi",
     "python.terminal.activateEnvironment": false,
     "python.terminal.shellIntegration.enabled": false,
