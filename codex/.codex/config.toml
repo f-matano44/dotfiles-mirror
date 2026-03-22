@@ -1,18 +1,5 @@
-model = "gpt-5.3-codex"
+model = "gpt-5.4"
 model_reasoning_effort = "high"
 web_search = "live"
 personality = "pragmatic"
-
-# 起動コマンド：Activate the current dir as project using serena
-[mcp_servers.serena]
-command = "uvx"
-args = [
-    "--from",
-    "git+https://github.com/oraios/serena",
-    "serena",
-    "start-mcp-server",
-    "--context",
-    "codex",
-    "--enable-web-dashboard",
-    "false",
-]
+service_tier = "fast"
