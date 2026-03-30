@@ -1,6 +1,6 @@
 # dotfiles
 
-I mainly use this repo on macOS (M1 chip) and Linux Mint (home-built).
+I mainly use this repo on macOS and Linux Mint.
 
 ## My environment
 
@@ -10,7 +10,7 @@ I mainly use this repo on macOS (M1 chip) and Linux Mint (home-built).
 * Python management: uv + ruff + mypy
 * Java management: Gradle
 
-## Setup (GNU tools)
+## Setup (GNU stow + findutils)
 
 ```sh
 xargs -a stow_targets.txt stow
