@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 I mainly use this repo on macOS and Linux Mint.
 
