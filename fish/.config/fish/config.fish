@@ -40,6 +40,7 @@ end
 set -e UV_PYTHON
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
+set -gx UV_EXCLUDE_NEWER "2 weeks"
 set -gx UV_VENV_CLEAR 1
 alias python python3
 abbr upython "uv run python"
