@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-DOTFILES=$(pwd)
+DOTFILES=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 
 # make backup folder
 TIMESTAMP=$(date +%Y%m%dT%H%M%S)
@@ -39,10 +39,10 @@ fi
 
 
 # Set Symbolic link
-if [ -f "$SETTINGS_DEST" ]; then
+if [ -e "$SETTINGS_DEST" ] || [ -L "$SETTINGS_DEST" ]; then
     mv "$SETTINGS_DEST" "$BACKUP_FOLDER"/codium_config.json
 fi
-if [ -f "$CSPELL_DEST" ]; then
+if [ -e "$CSPELL_DEST" ] || [ -L "$CSPELL_DEST" ]; then
     mv "$CSPELL_DEST" "$BACKUP_FOLDER"/cspell.json
 fi
 ln -s "$SETTINGS_SOURCE" "$SETTINGS_DEST"
