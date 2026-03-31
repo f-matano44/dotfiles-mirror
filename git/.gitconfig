@@ -1,6 +1,7 @@
 [user]
 	name = Fumiyoshi MATANO
 	email = fumiyoshi.matano@gmail.com
+    signingkey = "~/.ssh/id_ed25519"
 
 [core]
 	editor = codium --wait
@@ -17,8 +18,8 @@
 [commit]
 	gpgsign = true
 
-[include]
-    path = ~/.gitconfig_local
+[gpg]
+	format = ssh
 
 [pull]
 	rebase = false
