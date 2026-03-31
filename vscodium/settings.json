@@ -51,7 +51,8 @@
     "files.associations": {
         ".gitconfig_local": "properties",
         "*.bash": "shellscript",
-        "CHANGELOG": "plaintext"
+        "CHANGELOG": "plaintext",
+        "ignore": "ignore"
     },
     "files.exclude": {
         "**/__pycache__": true
