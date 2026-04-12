@@ -22,7 +22,7 @@ switch (uname)
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
         # GNU Utilities
-        fish_add_path /opt/homebrew/opt/coreutils/libexec/gnubin
+        fish_add_path /opt/homebrew/opt/uutils-coreutils/libexec/uubin
         fish_add_path /opt/homebrew/opt/findutils/libexec/gnubin
 
     case Linux
