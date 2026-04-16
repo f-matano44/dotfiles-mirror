@@ -1,9 +1,17 @@
 #! /bin/sh
 
+# Surface におけるタッチパネルの無効化
 if command -v xinput >/dev/null 2>&1; then
     if xinput list --name-only 2>/dev/null | grep -Fxq "Surface Touch Device"; then
         xinput disable "Surface Touch Device"
     fi
 fi
 
+# firefox の文字化け対策
+if [ -d "$HOME/snap/firefox" ] && [ ! -d "$HOME/snap/firefox/current/.local/share/fonts" ]; then
+    mkdir -p "$HOME/snap/firefox/current/.local/share"
+    ln -s "$HOME/.local/share/fonts" "$HOME/snap/firefox/current/.local/share/fonts"
+fi
+
+# 一部キーの無効化
 (sleep 10 && xmodmap "$HOME/.config/xmodmap") &
