@@ -40,4 +40,4 @@
 ### Python
 
 私の環境では mypy による型チェックを導入しているため、型アノテーションを積極的につけてください。
-`uv run python -m py_compile`、`uvx ruff check` による文法確認は必要ですが、通った場合の報告は不要です。
+編集後は `uv run python -m py_compile`、`uvx ruff check` による静的確認をしてください。
