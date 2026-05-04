@@ -107,6 +107,7 @@
     },
     "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorTheme": "Dark Modern",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.empty.hint": "hidden",
     "workbench.iconTheme": "vscode-icons",
