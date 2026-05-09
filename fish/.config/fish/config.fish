@@ -21,9 +21,9 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
-        # GNU Utilities
+        # uutils
         fish_add_path /opt/homebrew/opt/uutils-coreutils/libexec/uubin
-        fish_add_path /opt/homebrew/opt/findutils/libexec/gnubin
+        fish_add_path /opt/homebrew/opt/uutils-findutils/libexec/uubin
 
     case Linux
         # Gradle
@@ -41,9 +41,9 @@ set -e UV_PYTHON
 set -e UV_EXCLUDE_NEWER
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
+set -gx UV_INDEX_URL "https://pypi.flatt.tech/simple/"
 set -gx UV_VENV_CLEAR 1
-alias python python3
-abbr upython "uv run python"
+abbr upython "uv run python3"
 
 if status is-interactive
     # Docker -> Podman
