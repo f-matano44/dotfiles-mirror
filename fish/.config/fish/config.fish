@@ -41,7 +41,7 @@ set -e UV_PYTHON
 set -e UV_EXCLUDE_NEWER
 set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
-set -gx UV_INDEX_URL "https://pypi.flatt.tech/simple/"
+set -gx UV_DEFAULT_INDEX "https://pypi.flatt.tech/simple/"
 set -gx UV_VENV_CLEAR 1
 abbr upython "uv run python3"
 
