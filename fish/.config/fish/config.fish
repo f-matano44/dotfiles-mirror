@@ -13,17 +13,19 @@ fish_add_path "$HOME/.local/bin"
 switch (uname)
     case Darwin
         # Homebrew
-        eval (/opt/homebrew/bin/brew shellenv)
-        set -gx HOMEBREW_NO_ENV_HINTS 1
+        if test -x /opt/homebrew/bin/brew
+            eval (/opt/homebrew/bin/brew shellenv)
+            set -gx HOMEBREW_NO_ENV_HINTS 1
+        end
+
+        # uutils
+        fish_add_path /opt/homebrew/opt/uutils-coreutils/libexec/uubin
+        fish_add_path /opt/homebrew/opt/uutils-findutils/libexec/uubin
 
         # Java
         set -gx JAVA_HOME "/opt/homebrew/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
-
-        # uutils
-        fish_add_path /opt/homebrew/opt/uutils-coreutils/libexec/uubin
-        fish_add_path /opt/homebrew/opt/uutils-findutils/libexec/uubin
 
     case Linux
         # Gradle
