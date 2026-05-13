@@ -27,6 +27,9 @@ switch (uname)
         fish_add_path "$JAVA_HOME/bin"
         # set -gx CPPFLAGS "-I$JAVA_HOME/include"
 
+        # eza
+        type -q eza; and alias ls "eza --group-directories-first"
+
     case Linux
         # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
