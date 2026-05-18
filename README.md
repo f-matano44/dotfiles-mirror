@@ -4,7 +4,8 @@ I mainly use this repo on macOS and Linux Mint.
 
 ## My environment
 
-* Terminal emulator: Terminal.app (macOS) or xfce4-terminal (Linux)
+* Terminal (macOS): Terminal.app
+* Terminal (Linux): xfce4-terminal
 * Shell: fish
 * Editor: VSCodium + Codex
 * Python management: uv + ruff + mypy
