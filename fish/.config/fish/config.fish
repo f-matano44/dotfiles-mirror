@@ -41,6 +41,9 @@ switch (uname)
         fish_add_path "/opt/rocm-6.3.4/bin"
 end
 
+# copy atcoder template
+abbr atc "cp $HOME/Dotfiles/Main.java ./Main.java"
+
 # Python
 set -e UV_PYTHON
 set -e UV_EXCLUDE_NEWER
