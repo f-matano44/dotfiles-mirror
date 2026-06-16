@@ -2,3 +2,6 @@ model = "gpt-5.5"
 model_reasoning_effort = "medium"
 web_search = "live"
 personality = "pragmatic"
+
+[shell_environment_policy]
+set = { RUFF_NO_CACHE = "true" }
