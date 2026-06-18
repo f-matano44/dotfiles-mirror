@@ -15,7 +15,7 @@ switch (uname)
         # Homebrew
         if test -x /opt/homebrew/bin/brew
             eval (/opt/homebrew/bin/brew shellenv)
-            set -gx HOMEBREW_NO_ENV_HINTS 1
+            set -gx HOMEBREW_NO_ENV_HINTS true
         end
 
         # uutils
@@ -47,17 +47,18 @@ abbr atc "cp $HOME/Dotfiles/Main.java ./Main.java"
 # Python
 set -e UV_PYTHON
 set -e UV_EXCLUDE_NEWER
-set -gx PIP_REQUIRE_VIRTUALENV 1
 set -gx MPLBACKEND qtagg
+set -gx PIP_REQUIRE_VIRTUALENV true
+set -gx RUFF_NO_CACHE true
 set -gx UV_DEFAULT_INDEX "https://pypi.flatt.tech/simple/"
-set -gx UV_VENV_CLEAR 1
+set -gx UV_VENV_CLEAR true
 abbr upython "uv run python3"
 
 if status is-interactive
     # Docker -> Podman
     if type -q podman
         alias docker podman
-        set -gx PODMAN_COMPOSE_WARNING_LOGS 0
+        set -gx PODMAN_COMPOSE_WARNING_LOGS false
     end
 
     # Load dot-envrc
