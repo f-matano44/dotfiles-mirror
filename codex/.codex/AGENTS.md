@@ -37,5 +37,4 @@
 ### Python
 
 私の環境では mypy による型チェックを導入しているため、型アノテーションを積極的につけてください。
-編集後は py_compile、ruff による静的確認をしてください。
-pythonの仮想環境は .vscode/setting.json にある python.defaultInterpreterPath を優先し、指定がない場合は規定の仮想環境で実行してください。
+編集後は `uv run python3 -m py_compile`、`uvx ruff` による静的確認をしてください。
