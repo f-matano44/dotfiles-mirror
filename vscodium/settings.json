@@ -107,6 +107,8 @@
     },
     "update.showReleaseNotes": false,
     "vsicons.dontShowNewVersionMessage": true,
+    "window.commandCenter": false,
+    "workbench.browser.showInTitleBar": false,
     "workbench.colorTheme": "Dark Modern",
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.empty.hint": "hidden",
