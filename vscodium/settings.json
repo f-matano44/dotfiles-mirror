@@ -15,6 +15,7 @@
         "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.semanticHighlighting.enabled": false
     },
+    "breadcrumbs.enabled": false,
     "chat.disableAIFeatures": true,
     "chatgpt.localeOverride": "ja-JP",
     "chatgpt.openOnStartup": true,
@@ -54,6 +55,7 @@
         "CHANGELOG": "plaintext",
         "ignore": "ignore"
     },
+    "files.autoGuessEncoding": true,
     "files.exclude": {
         "**/__pycache__": true
     },
