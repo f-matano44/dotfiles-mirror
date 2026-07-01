@@ -31,4 +31,4 @@
 ### Python
 
 私の環境では mypy による型チェックを導入しているため、型アノテーションを積極的につけてください。
-編集後は `uv run python3 -m py_compile`、`uvx ruff` による静的確認をしてください。
+編集後は py_compile/ruff/mypy による静的確認をしてください。

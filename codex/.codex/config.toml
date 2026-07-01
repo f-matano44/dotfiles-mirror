@@ -1,7 +1,8 @@
 model = "gpt-5.5"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "low"
 web_search = "live"
 personality = "pragmatic"
+service_tier = "default"
 
 [shell_environment_policy]
-set = { RUFF_NO_CACHE = "true" }
+set = { RUFF_NO_CACHE = "true", MYPY_CACHE_DIR = "/dev/null" }
