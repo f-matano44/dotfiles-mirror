@@ -91,6 +91,7 @@
     "python.terminal.activateEnvironment": false,
     "python.terminal.shellIntegration.enabled": false,
     "redhat.telemetry.enabled": true,
+    "ruff.format.preview": true,
     "scm.alwaysShowRepositories": true,
     "scm.defaultViewMode": "tree",
     "svg.preview.mode": "img",
