@@ -7,11 +7,5 @@ if command -v xinput >/dev/null 2>&1; then
     fi
 fi
 
-# firefox の文字化け対策
-if [ -d "$HOME/snap/firefox" ] && [ ! -d "$HOME/snap/firefox/current/.local/share/fonts" ]; then
-    mkdir -p "$HOME/snap/firefox/current/.local/share"
-    ln -s "$HOME/.local/share/fonts" "$HOME/snap/firefox/current/.local/share/fonts"
-fi
-
 # 一部キーの無効化
 (sleep 10 && xmodmap "$HOME/.config/xmodmap") &
