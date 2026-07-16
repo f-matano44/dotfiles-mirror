@@ -52,6 +52,7 @@ set -gx PIP_REQUIRE_VIRTUALENV true
 set -gx UV_DEFAULT_INDEX "https://pypi.flatt.tech/simple/"
 set -gx UV_VENV_CLEAR true
 abbr upython "uv run python3"
+abbr ustreamlit "uv run streamlit"
 
 if status is-interactive
     # Docker -> Podman

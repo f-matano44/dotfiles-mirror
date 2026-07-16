@@ -121,6 +121,7 @@
         "sosfilt",
         "soundfile",
         "soxr",
+        "streamlit",
         "Tacotron",
         "tamasfe",
         "targz",
