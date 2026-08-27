@@ -1,5 +1,5 @@
 codex
 fish
 git
+wayland
 xfce
-xorg

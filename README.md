@@ -15,6 +15,7 @@ I mainly use this repo on macOS and Linux Mint.
 
 ```sh
 xargs -a stow_targets.txt stow
+gsettings set org.gnome.desktop.input-sources xkb-options "['custom:disable_keys']"
 bash setup_codium.bash
 ```
 

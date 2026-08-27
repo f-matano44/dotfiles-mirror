@@ -1,0 +1,4 @@
+! include %S/evdev
+
+! option = symbols
+custom:disable_keys = +custom(disable_keys)
