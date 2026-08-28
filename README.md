@@ -15,8 +15,37 @@ I mainly use this repo on macOS and Linux Mint.
 
 ```sh
 xargs -a stow_targets.txt stow
-gsettings set org.gnome.desktop.input-sources xkb-options "['custom:disable_keys']"
 bash setup_codium.bash
+```
+
+### Disable unused keys (Linux)
+
+Install `keyd`. Ubuntu 25.10 or later provides it in the `universe` repository.
+
+```sh
+sudo apt install keyd
+```
+
+On Ubuntu 20.04 through 24.04, use the upstream packaging team's PPA first.
+
+```sh
+sudo add-apt-repository ppa:keyd-team/ppa
+sudo apt update
+sudo apt install keyd
+```
+
+Install the configuration and start the daemon.
+
+```sh
+sudo install -Dm644 keyd/default.conf /etc/keyd/default.conf
+sudo systemctl enable --now keyd
+```
+
+The Debian/Ubuntu package renames the command to `keyd.rvaiya` to avoid a
+name conflict with another package. The service name remains `keyd`.
+
+```sh
+sudo keyd.rvaiya monitor
 ```
 
 ## Third-party notices

@@ -1,9 +1,0 @@
-partial alphanumeric_keys
-
-xkb_symbols "disable_keys" {
-    key <RALT> { [ VoidSymbol ] };
-    key <PGUP> { [ VoidSymbol ] };
-    key <PGDN> { [ VoidSymbol ] };
-
-    modifier_map None { <RALT> };
-};
