@@ -11,49 +11,35 @@ I mainly use this repo on macOS and Linux Mint.
 * Python management: uv + ruff + mypy
 * Java management: Gradle
 
-## Setup (GNU stow + findutils)
+## Setup
+
+Requires GNU Stow and GNU findutils.
 
 ```sh
 xargs -a stow_targets.txt stow
 bash setup_codium.bash
 ```
 
-### Disable unused keys (Linux)
+### Disable unused keys on Linux
 
-#### Linux desktop computers
+#### Desktop
 
-Install `keyd`. Ubuntu 25.10 or later provides it in the `universe` repository.
-
-```sh
-sudo apt install keyd
-```
-
-On Ubuntu 20.04 through 24.04, use the upstream packaging team's PPA first.
+On Ubuntu 20.04–24.04, add the PPA first:
 
 ```sh
 sudo add-apt-repository ppa:keyd-team/ppa
 sudo apt update
-sudo apt install keyd
 ```
 
-Install the configuration and start the daemon.
-
 ```sh
+sudo apt install keyd
 sudo install -Dm644 keyd/default.conf /etc/keyd/default.conf
 sudo systemctl enable --now keyd
 ```
 
-The Debian/Ubuntu package renames the command to `keyd.rvaiya` to avoid a
-name conflict with another package. The service name remains `keyd`.
+#### MouseComputer G4I7U01BKABA laptop
 
-```sh
-sudo keyd.rvaiya monitor
-```
-
-#### MouseComputer G4I7U01BKABA built-in keyboard
-
-Instead of `keyd`, install the model-specific udev configuration. It disables
-Right Alt, Page Up, and Page Down without affecting other computers.
+Install the model-specific udev configuration instead of using `keyd`.
 
 ```sh
 sudo install -Dm644 \
@@ -63,9 +49,6 @@ sudo systemd-hwdb update
 sudo udevadm trigger --subsystem-match=input --action=change
 sudo systemctl disable --now keyd
 ```
-
-Reboot if the change does not take effect immediately. `keyd` 2.5.0 is disabled
-because it may fail to detect this keyboard and consume one CPU core.
 
 ## Third-party notices
 
