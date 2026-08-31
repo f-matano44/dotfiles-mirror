@@ -20,6 +20,8 @@ bash setup_codium.bash
 
 ### Disable unused keys (Linux)
 
+#### Linux desktop computers
+
 Install `keyd`. Ubuntu 25.10 or later provides it in the `universe` repository.
 
 ```sh
@@ -47,6 +49,23 @@ name conflict with another package. The service name remains `keyd`.
 ```sh
 sudo keyd.rvaiya monitor
 ```
+
+#### MouseComputer G4I7U01BKABA built-in keyboard
+
+Instead of `keyd`, install the model-specific udev configuration. It disables
+Right Alt, Page Up, and Page Down without affecting other computers.
+
+```sh
+sudo install -Dm644 \
+  udev/90-mousecomputer-g4i7u01bkaba-keyboard.hwdb \
+  /etc/udev/hwdb.d/90-mousecomputer-g4i7u01bkaba-keyboard.hwdb
+sudo systemd-hwdb update
+sudo udevadm trigger --subsystem-match=input --action=change
+sudo systemctl disable --now keyd
+```
+
+Reboot if the change does not take effect immediately. `keyd` 2.5.0 is disabled
+because it may fail to detect this keyboard and consume one CPU core.
 
 ## Third-party notices
 
