@@ -36,6 +36,9 @@ switch (uname)
 
         # AMD Driver
         fish_add_path "/opt/rocm-6.3.4/bin"
+
+        # Stackchan
+        abbr m5burner "$HOME/m5stack/bin/m5burner --ozone-platform=x11 --disable-gpu"
 end
 
 # copy atcoder template
