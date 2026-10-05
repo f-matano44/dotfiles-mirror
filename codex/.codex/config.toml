@@ -5,4 +5,4 @@ personality = "pragmatic"
 service_tier = "default"
 
 [shell_environment_policy]
-set = { RUFF_NO_CACHE = "true", MYPY_CACHE_DIR = "/dev/null", MPLBACKEND = "qtagg" }
+set = { RUFF_NO_CACHE = "true", MYPY_CACHE_DIR = "/dev/null", MPLBACKEND = "qtagg", PYTEST_ADDOPTS = "-p no:cacheprovider" }
