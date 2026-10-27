@@ -34,8 +34,8 @@ switch (uname)
         # Gradle
         fish_add_path "$HOME/.local/gradle/bin/"
 
-        # Node
-        fish_add_path "$HOME/.local/node-v24.22.1-linux-x64/bin/"
+        # sass
+        fish_add_path "$HOME/.local/dart-sass"
 
         # AMD Driver
         fish_add_path "/opt/rocm-6.3.4/bin"
