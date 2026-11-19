@@ -50,10 +50,10 @@ abbr atc "cp $HOME/Dotfiles/Main.java ./Main.java"
 # Python
 set -e UV_PYTHON
 set -e UV_EXCLUDE_NEWER
+set -e UV_DEFAULT_INDEX
 set -gx MPLBACKEND qtagg
 set -gx QT_LOGGING_RULES "qt.qpa.wayland.textinput.warning=false"
 set -gx PIP_REQUIRE_VIRTUALENV true
-set -gx UV_DEFAULT_INDEX "https://pypi.flatt.tech/simple/"
 set -gx UV_VENV_CLEAR true
 abbr upython "uv run python3"
 abbr ustreamlit "uv run streamlit"
